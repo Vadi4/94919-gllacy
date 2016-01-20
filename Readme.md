@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Вадим Герин](https://htmlacademy.ru/profile/id94919).
-* Наставник: [Илья Сачев] (https://htmlacademy.ru/profile/id11939).
+* Наставник: [Илья Сачев](https://htmlacademy.ru/profile/id11939).
 
 ---
 
