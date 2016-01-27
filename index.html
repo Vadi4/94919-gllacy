@@ -5,8 +5,177 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
+	<header class="main-header">
+		<div class="container">
+			<div class="header-logo">
+				<a href="#">
+					<img src="img/header-logo" alt="GllacyShop">
+				</a>
+			</div>
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li>
+						<a href="#">Доставка и оплата</a>
+					</li>
+					<li>
+						<a href="#">О Компании</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="search" href="#"></a>
+				<a class="enter" href="#">Вход</a>
+				<a class="basket" href="#">Пусто</a>
+			</div>
+		</div>
+	</header>
+	<main class="container">	
+		<span class="header-scedule">c 10 до 20, ежедневно</span><br>
+		<span class="header-phone-number">8 812 450-25-25</span>
+		<input type="radio" name="header-bg" checked>
+		<input type="radio" name="header-bg">
+		<input type="radio" name="header-bg">
+		<div class="header-slide">
+			<img src="img/ice-cream" alt="">
+			<h1>Крем-брюле и пломбир<br>
+			с малиновым джемом
+		    </h1>
+			<a class="button" href="#">Давайте оба</a>
+		</div>
+		<figure class="offers offer-left">
+			<img src="img/raspberries" alt="">
+			<h2>Малинка даром!</h2>
+			<p>При покупке 2кг любого фруктового мороженного, добавим<br> 
+			в ваш заказ банку малинового варенья бесплатно.
+			</p>
+			<a class="button" href="#">Хочу варенье!</a>
+		</figure>
+		<figure class="offers offer-right">
+			<img src="img/chocolate" alt="">
+			<h2>Шоколадки даром!</h2>
+			<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку<br>
+			вкуснейшей шоколадной присыпки совершенно бесплатно.
+			</p>
+			<a class="button" href="#">Хочу шоколадки!</a>
+		</figure>
+		<figure class="kind-of-ice">
+			<img src="img/butter-orange-ice" alt="">
+			<span class="price-ice">310 Р/кг</span>
+			<figcaption>
+				Сливочное с апельсиновым<br>
+				джемом и цитрусовой стружкой
+			</figcaption>
+		</figure>
+		<figure class="kind-of-ice">
+			<img src="img/butter-coffe-ice" alt="">
+			<span class="price-ice">380 Р/кг</span>
+			<figcaption>
+			Сливочно-кофейное с кусочками<br>
+			шоколада
+			</figcaption>
+		</figure>
+		<figure class="kind-of-ice">
+			<img src="img/butter-strawberry-ice" alt="">
+			<span class="price-ice">310 Р/кг</span>
+			<figcaption>
+			Сливочно клубничное с<br>
+			присыпкой из белого шоколада
+			</figcaption>
+		</figure>
+		<figure class="kind-of-ice">
+			<img src="img/butter-cremebrulee-ice" alt="">
+			<span class="price-ice">415 Р/кг</span>
+			<figcaption>
+			Сливочное крем-брюле с<br>
+			карамельной подливкой
+			</figcaption>
+		</figure>
+		<section class="features">
+			<h3>Магазин глейси - это онлайн и офлайн магазин по продаже мороженного собственного<br>
+			производства на развес</h3>
+			<img src="img/features-logo-ice" alt="">	
+			<p>Все наше мороженное изготавливается на собственном<br>
+			производстве, с использованием современного оборудования<br>
+			и проверенных временем технологий
+			</p>
+			<img src="img/fatures-logo-leaf" alt="">
+			<p>Для приготовления мороженного используются настоящие<br>
+			сливки и молоко высочайшего качества. Все дополнительные<br>
+			ингридиенты и добавки произведены из натурального,<br>
+			экологически чистого сырья.
+			</p>
+			<img src="img/features-logo-cow" alt="">
+			<p>Закупка ингридиентов производится только у проверенных<br>
+			феремерских хозяйств и компаний, с которыми нас связывает<br>
+			долговременное сотрудничество.
+			</p>
+			<img src="img/features-logo-temp" alt="">
+			<p>Доставка нашего мороженного до заказчиков осуществляется<br>
+			в специальном термопаке, которая не дает мороженному<br>
+			растаять в пути и позволяет ему сохранить свой превосходный<br>
+			вкус.
+			</p>
+		</section>
+		<article class="blog-news">
+			<span>Новое в нашем блоге</span>
+			<a href="#">10 способов сервировки<br>
+			фруктовых щербетов<br>
+			к столу</a>
+		</article>
+		<article class="mailing">
+			<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br>
+			всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
+			и не слать всякой не нужной ерунды. Честно =)
+			<form method="">
+			<input type="email" placeholder="Электронная почта">
+			<input type="submit" value="Отправить" class="button">
+			</form>
+			</p>
+		</article>
+		<div class="map">
+			<img src="img/map-pointer" alt="">
+			<div class="">
+				<p>Адрес главного офиса и<br>
+				офлайн магазина:<br>
+				<span class="address">ул. Большая Конюшенная<br>
+				19/8, Сантк-Петербург
+				</span>
+				</p>
+				<p>
+				Для заказов по телефону:<br>
+				<span class="phone-number">8 812 450-25-25</span><br>
+				(c 10 до 20 ежедневно)
+				</p>
+				<a class="button" href="">Форма обратной связи</a>
+			</div>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="footer-social">
+				<a class="social-btn social-btn-twitter" href="#"></a>
+				<a class="social-btn social-btn-insta" href="#"></a>
+				<a class="social-btn social-btn-facebook" href="#"></a>
+				<a class="social-btn social-btn-vk" href="#"></a>
+			</div>
+			<div class="footer-info">
+				<img src="" class="footer-heart">
+				<a href="#" class="footer-info-left">Для поставщиков</a>
+				<a href="#" class="footer-info-left">О производстве</a>
+				<a href="#" class="footer-info-right">Наши документы</a>
+				<a href="#" class="footer-info-right">Экологические стандарты</a>
+			</div>
+			<div class="footer-copyright">
+				<img src="img/footer-logo" class="footer-logo">
+				<p>Сделано в
+				<a class="" href="https://htmlacademy.ry">HTML Academy</a>
+				2016
+				</p>
+			</div>
+		</div>
+	</footer>
   </body>
 </html>
