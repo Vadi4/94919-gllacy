@@ -3,10 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+
+    <!-- 
+		Такая же ошибка, как и в Barbeshop: Настрой правильно редактор и отступы
+		+ прочти, пожалуйста, specification.md
+
+		Смотри замечания по header, main, footer на index.html
+     -->
   </head>
   <body>
 	<header class="main-header">
 		<div class="container">
+			<!-- 
+				Можно проще и лучше. 
+				Просто
+				<a class="header-logo" href="#">
+					<img src="img/header-logo" alt="GllacyShop">
+				</a>
+			 -->
 			<div class="header-logo">
 				<a href="#">
 					<img src="img/header-logo" alt="GllacyShop">
@@ -33,8 +47,15 @@
 		</div>
 	</header>
 	<main class="container">
+		<!-- 
+			Смотри замечания по этим двум span в index.html
+		 -->
 		<span class="header-scedule">c 10 до 20, ежедневно</span><br>
 		<span class="header-phone-number">8 812 450-25-25</span>
+		<!-- 
+			Для breadcrumbs достаточно просто <ul class="breadcrumbs"> 
+			Лишний div можно убрать
+		 -->
 		<div class="breadcrumbs">
 			<ul class="breadcrumbs-list">
 				<li>
@@ -48,7 +69,14 @@
 				</li>
 			</ul>
 		</div>
-		<h2>Сливочное мороженое</h2>
+
+		<h2>Сливочное мороженое</h2> <!-- Это должно быть h1 -->
+
+		<!-- 
+			Смотри замечания по форме в учебном макете барбершоп
+			Все однотипно
+		 -->
+
 		<form action="" method="post" class="select-ice">
 			<label>Сортировка
 			<select name="sort">
@@ -75,6 +103,11 @@
 			</label>
 			<a href="#" class="button">Применить</a>
 		</form>
+
+		<!-- 
+			Замечания по списку товаров смотри в index.html
+		 -->
+
 		<figure class="kind-of-ice">
 			<img src="img/butter-orange-ice" alt="">
 			<span class="price-ice">310 Р/кг</span>
@@ -179,7 +212,12 @@
 			<a href="#">5</a>
 			<a href="#" class="pages-next">
 		</div>
-		<hr>
+		<!-- 
+			Не нужно использовать этот тег. 
+			Он сложно стилизуется, с ним есть проблемы + использовать его внизу блока совсем неправильно. 
+			Ты сможешь оформить эту рамку просто на блоке с футером 
+		--> 
+		<hr> 
 	</main>
 	<footer class="main-footer">
 		<div class="container">
