@@ -1,34 +1,39 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
-		<!-- 
-			Такая же ошибка, как и в Barbeshop: Настрой правильно редактор и отступы
-			+ прочти, пожалуйста, specification.md
-		 -->
+		<link href="css/normalize.css" type="text/css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
 			<div class="container">
-				<!-- 
-					На главной достаточно всего лишь одного блока
-					<div class="header-logo">
-						<img src="img/header-logo" alt="GllacyShop">
-					</div>
-
-					Выдержка из specification.md
-					- Логотип не является ссылкой.
-				 -->
 				<div class="header-logo">
-					<a href="#">
-						<img src="img/header-logo" alt="GllacyShop">
-					</a>
+					<img src="img/header-logo.svg" alt="GllacyShop">
 				</div>
 				<nav class="main-navigation">
 					<ul>
 						<li>
 							<a href="#">Каталог</a>
+							<ul class="catalog-list" hidden>
+								<li>
+									<a href="#" class="catalog-list-news">Новости</a>
+								</li>
+								<li>
+									<a href="#">Сливочное</a>
+								</li>
+								<li>
+									<a href="#">Щербеты</a>
+								</li>
+								<li>
+									<a href="#">Фруктовый лёд</a>
+								</li>
+								<li>
+									<a href="#">Мелорин</a>
+								</li>
+							</ul>
 						</li>
 						<li>
 							<a href="#">Доставка и оплата</a>
@@ -39,308 +44,198 @@
 					</ul>
 				</nav>
 				<div class="user-block">
-					
-					<!-- 
-						Тут многого не хватает
-
-						- Шапка — при наведении на кнопку поиска появляется форма для ввода текста (смотрите папку слоёв «Ховеры» в `gllacy-index.psd`).
-						- Шапка — при наведении на кнопку «Вход» появляется форма для авторизации (смотрите папку слоёв «Ховеры» в `gllacy-index.psd`).
-						- Шапка — Если пользователь добавил что-то в корзину, соответствующий пункт в шапке страницы меняет цвет фона на белый. При наведении на этот пункт появляется форма с товарами (смотрите папку слоёв «Ховеры» в `gllacy-index.psd`).
-						
-						Нужно доразметить недостающие блоки
-					 -->
-
 					<a class="search" href="#"></a>
+					<form class="form-search" hidden>
+						<input type="text" value="Что ищем?">
+					</form>
 					<a class="enter" href="#">Вход</a>
+					<form class="form-enter" hidden>
+						<input type="email">
+						<input type="password">
+						<input type="submit" class="button">
+						<a href="#">Забыли пароль?<a>
+						<a href="#">Новая регистрация</a>
+					</form>
 					<a class="basket" href="#">Пусто</a>
+					<form class="form-basket" hidden>
+						<ul>
+							<li>
+								<input type="checkbox" id="basker-offer-1">
+								<label for="basker-offer-1">
+									<span class="basket-kind-of-ice">Пломбир с апельсиновым джемом</span>
+									<span class="basket-weight-ice">1,5</span>&times;
+									<span class="basket-price-ice">200 руб</span>
+									<span class="basket-total-cost-ice">300 руб</span>
+								</label>
+							</li>	
+							<li>
+								<input type="checkbox" id="basker-offer-2">
+								<label for="basker-offer-2">
+									<span class="basket-kind-of-ice">Клубничный пломбир с присыпкой<br>из белого шоколада</span>
+									<span class="basket-weight-ice">1,5</span>&times;
+									<span class="basket-price-ice">300 руб</span>
+									<span class="basket-total-cost-offer">450 руб</span>
+								</label>
+							</li>
+						<span class="basket-total-price-offer">Итого: 750руб</span>	
+						<input type="submit" class="button">
+					</form>
+				</div>
+				<div class="header-contacts">
+						<div class="header-contacts-time">c 10 до 20, ежедневно</div>
+						<div class="header-contacts-phone">8 812 450-25-25</div>
 				</div>
 			</div>
 		</header>
-
-		<!-- 
-			Также как и в БШ лучше для main задать свой класс, а container положить отдельный блоком внутрь
-		 -->
-		<main class="container">	
-
-			<!-- 
-				header-scedule и header-phone-number лучше разместить как ты и назвал в классе в header
-				Можно поместить их в user-block и
-				Дополнительно 2 этих блока я бы обернул в еще один div
-
-				Например, вот так
-				<div class="header-contacts">
-					<div class="header-contacts-time">c 10 до 20, ежедневно</div>
-					<div class="header-contacts-phone">8 812 450-25-25</div>
-				</div>
-
-				Заменив span на div можно избавиться от лишнего <br>
-			 -->
-			<span class="header-scedule">c 10 до 20, ежедневно</span><br>
-			<span class="header-phone-number">8 812 450-25-25</span>
-
-			<!-- 
-				Слайдер ты расположил правильно по структуре
-				Он не участвует в header, поэтому желательно убрать из названий классов слово header применительно к слайдеру
-
-				Дальше у тебя просто каша в контенте, будет очень сложно писать сетку для такой разметки
-
-				Смотрим на главную страницу на контент область и видим: 
-					- Слайдер (отдельный блок)
-					- Спец предложения (второй отдельный блок), который содержит в себе 2 спец предложения
-					- 4 товара 
-					- Блок о магазине
-					- Подписка + пост из блога
-
-				Все перечисленные выше блоки должны быть отдельно обернуты в div, а не просто следовать друг за другом
-
-				То есть это должно выглядеть вот так
-
+		<main class="main-content">	
+			<div class="container">
 				<div class="slider">
+					<input type="radio" name="slider-radio" checked>
+					<input type="radio" name="slider-radio">
+					<input type="radio" name="slider-radio">
 					<div class="slider-slide">
-						Тут контент слайдера
+						<img src="img/index_ice_main.png" alt="">
+						<h2 class="g-title-h2">Крем-брюле и пломбир с малиновым джемом</h2>
+						<a class="button" href="#">Давайте оба</a>
 					</div>
 				</div>
-			 -->
-
-			<input type="radio" name="header-bg" checked>
-			<input type="radio" name="header-bg">
-			<input type="radio" name="header-bg">
-			<div class="header-slide">
-				<img src="img/ice-cream" alt="">
-				<!-- 
-					Заголовок слайда != заголовок сайта
-					Я думаю, так же как и ты, что этот заголовок важен, но лучше использовать h2 для его разметки
-				 -->
-				<h1>Крем-брюле и пломбир<br>
-				с малиновым джемом
-				</h1>
-				<a class="button" href="#">Давайте оба</a>
-			</div>
-
-			<!-- 
-				
-				Предложения, акция != figure
-
-				figure нужно использовать тогда, когда ты описываешь картинку, которая имеет роль контента, а не оформления
-				Предположим, у тебя в контенте встретился важный график, фотография или еще что-то. В таком случае, его конечно же нужно выделить в figure
-
-				В данном случае, у нас картинки это фон, то есть оформление и они не должны вообще участвовать в разметке
-				Самое важное в предложениях – это контент, а не фотографии
-
-				Поэтому, тут может подойти либо article, либо section
-				Ты можешь использовать section для блока-обертки этих предложений и article для каждого из предложений
-				Можешь использовать div для блока-обертки, а section – для предложений
-
-				То есть, вот такая может быть разметка
-				
 				<section class="offers">
-					<article class="offer offer-raspberries">
-						<h3 class="offer-title">Малинка даром</h3> - использую h3, так как h2 использовали выше и этот заголовок по смысле менее важный, чем предыдущий
-						<p class="offer-text">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+					<article class="offers offer-raspberries">
+						<h3 class="g-title-h3">Малинка даром!</h3>
+						<p class="offer-text">При покупке 2кг любого фруктового мороженного, добавим
+						в ваш заказ банку малинового варенья бесплатно.
+						</p>
 						<a class="button" href="#">Хочу варенье!</a>
 					</article>
-				</section>
-
-				Итак, мы убрали img. Фон будем делать с помощью доп класса offer-raspberries. Явно задаю название класса более понятное, чем left-right
-				Тем более, класс будем использовать только для фона, в left-right (то есть в контроле положения) этот класс участвовать не будет. 
-				Да и вообще не нужен для контроля местоположения блоков какой-то доп. класс
-
-				Для внутренних блоков - текста и заголовка задал тоже явно классы
-				Так будет проще оформлять + это дает гибкость: ты не завязываешься на тегах, если что h3 можно будет безболезненно поменять на h4 или div к примеру (для SEO целей)
-			 -->
-
-			<figure class="offers offer-left">
-				<img src="img/raspberries" alt="">
-				<h2>Малинка даром!</h2>
-				<p>При покупке 2кг любого фруктового мороженного, добавим<br> <!-- В блоках, где может быть много текста, не стоит явно использовать br -->
-				в ваш заказ банку малинового варенья бесплатно.
-				</p>
-				<a class="button" href="#">Хочу варенье!</a>
-			</figure>
-			<figure class="offers offer-right">
-				<img src="img/chocolate" alt="">
-				<h2>Шоколадки даром!</h2>
-				<p>При покупке 2кг пломбира, добавим в ваш заказ упаковку<br>
-				вкуснейшей шоколадной присыпки совершенно бесплатно.
-				</p>
-				<a class="button" href="#">Хочу шоколадки!</a>
-			</figure>
-
-			<!-- 
-				Все-таки figure и figcaption применять для разметки товара не очень правильно
-				Тем более у тебя тут явно показано что название это ссылка
-
-				Можно было бы легко ограничиться такой разметкой
-
-				блок с картинкой 
-					картинка товара
-					цена товара (размещаем ее внутри блока с картинкой чтобы было проще позиционировать в будущем)
-				ссылка на товар
-
-				Также нужно учесть следующие моменты
-					- Лейбл ХИТ
-					- Знак рубля вместо буквы Р, но это разберем позже
-					- кг - меньшим шрифтом написано, значит нужно дополнительно обернуть в спан 
-
-				Я бы вообще для товаров, так как это список, использовал бы список
-				
-				Учитывая все замечания, разметка могла бы быть такой
+					<article class="offers offer-chocolate">
+						<h3 class="g-title-h3">Шоколадки даром!</h3>
+						<p class="offer-text">При покупке 2кг пломбира, добавим в ваш заказ упаковку
+						вкуснейшей шоколадной присыпки совершенно бесплатно.
+						</p>
+						<a class="button" href="#">Хочу шоколадки!</a>
+					</article>
+				</section>	
 				<ul class="items">
-					<li class="item">
-						<div class="item-image">
-							<img src="img/butter-orange-ice" alt="">
+					<li class="items">
+						<div class="item-image">	
+							<img src="img/butter-orange-ice.png" alt="">
 							<span class="item-price">310 Р/<span class="item-size">кг</span></span>
-						</div>
-						<a class="item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+						</div>	
+						<a class="item-title" href="#">Сливочное с апельсиновымджемом и цитрусовой стружкой</a>
+						<div class="item-label">Хит</div>	
+					</li>
+					<li class="items">
+						<div class="item-image">
+							<img src="img/butter-coffe-ice.png" alt="">
+							<span class="price-ice">380 Р/<span class="item-size">кг</span></span>
+						</div>	
+						<a class="item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+						<div class="item-label">Хит</div>						
+					</li>
+					<li class="items">
+						<div class="item-image">
+							<img src="img/butter-strawberry-ice.png" alt="">
+							<span class="price-ice">310 Р/<span class="item-size">кг</span></span>
+						</div>	
+						<a href="#">Сливочно клубничное с присыпкой из белого шоколада</a>
 						<div class="item-label">Хит</div>
 					</li>
-				</ul>
-			-->
-
-			<figure class="kind-of-ice">
-				<img src="img/butter-orange-ice" alt="">
-				<span class="price-ice">310 Р/кг</span>
-				<figcaption><a href="#">
-					Сливочное с апельсиновым<br>
-					джемом и цитрусовой стружкой</a>
-				</figcaption>
-			</figure>
-			<figure class="kind-of-ice">
-				<img src="img/butter-coffe-ice" alt="">
-				<span class="price-ice">380 Р/кг</span>
-				<figcaption><a href="#">
-				Сливочно-кофейное с кусочками<br>
-				шоколада</a>
-				</figcaption>
-			</figure>
-			<figure class="kind-of-ice">
-				<img src="img/butter-strawberry-ice" alt="">
-				<span class="price-ice">310 Р/кг</span>
-				<figcaption><a href="#">
-				Сливочно клубничное с<br>
-				присыпкой из белого шоколада</a>
-				</figcaption>
-			</figure>
-			<figure class="kind-of-ice">
-				<img src="img/butter-cremebrulee-ice" alt="">
-				<span class="price-ice">415 Р/кг</span>
-				<figcaption><a href="#">
-				Сливочное крем-брюле с<br>
-				карамельной подливкой</a>
-				</figcaption>
-			</figure>
-
-			<section class="features">
-				<!-- аналогично про br. Везде ниже их можно убрать -->
-				<h3>Магазин глейси - это онлайн и офлайн магазин по продаже мороженного собственного<br>
-				производства на развес</h3>
-				
-				<!-- 
-					Картинки в данном случае – это иконки
-					Они не несут никакого смыслового содержания и в таких случаях их часто оформляют через css как фон
-
-					Также если внимательно посмотришь весь этот текст ниже - это перечисление преимуществ. Поэтому я думаю что тут тоже было бы вполне уместно использовать список
-					Так как иконки будут через CSS, то нужно будет задать для каждого li свой класс
-				 -->
-
-				<img src="img/features-logo-ice" alt="">	
-				<p>Все наше мороженное изготавливается на собственном<br>
-				производстве, с использованием современного оборудования<br>
-				и проверенных временем технологий
-				</p>
-				<img src="img/fatures-logo-leaf" alt="">
-				<p>Для приготовления мороженного используются настоящие<br>
-				сливки и молоко высочайшего качества. Все дополнительные<br>
-				ингридиенты и добавки произведены из натурального,<br>
-				экологически чистого сырья.
-				</p>
-				<img src="img/features-logo-cow" alt="">
-				<p>Закупка ингридиентов производится только у проверенных<br>
-				феремерских хозяйств и компаний, с которыми нас связывает<br>
-				долговременное сотрудничество.
-				</p>
-				<img src="img/features-logo-temp" alt="">
-				<p>Доставка нашего мороженного до заказчиков осуществляется<br>
-				в специальном термопаке, которая не дает мороженному<br>
-				растаять в пути и позволяет ему сохранить свой превосходный<br>
-				вкус.
-				</p>
-			</section>
-			
-			<!-- 
-				Не хватает блока обертки
-			 -->
-			<article class="blog-news">
-				<span>Новое в нашем блоге</span> <!-- для заголовков либо div, либо h2-h6. -->
-				<!-- Вот ниже единственный правильный вариант использования br, он тут вроде как нужен, хотя на самом деле, даже здесь можно было бы обойтись без него -->
-				<a href="#">10 способов сервировки<br>
-				фруктовых щербетов<br>
-				к столу</a>
-			</article>
-
-			<article class="mailing">
-
-				<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе<br>
-				всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
-				и не слать всякой не нужной ерунды. Честно =)
-				<!-- 
-					Форму не нужно размещать внутри p, она должна идти после того как параграф закрывается 
-				 -->
-				<form method="">
-					<input type="email" placeholder="Электронная почта">
-					<input type="submit" value="Отправить" class="button">
-				</form>
-				</p>
-			</article>
-			
-			<!-- 
-				Карту повнимательнее разберем чуть позже, пока такой разметки достаточно
-			 -->
-			<div class="map">
-				<img src="img/map-pointer" alt="">
-				<div class="">
-					<p>Адрес главного офиса и<br>
-					офлайн магазина:<br>
-					<span class="address">ул. Большая Конюшенная<br>
-					19/8, Сантк-Петербург
-					</span>
-					</p>
-					<p>
-					Для заказов по телефону:<br>
-					<span class="phone-number">8 812 450-25-25</span><br>
-					(c 10 до 20 ежедневно)
-					</p>
-					<a class="button" href="">Форма обратной связи</a>
+					<li class="items">
+						<div class="item-image">
+							<img src="img/butter-cremebrulee-ice.png" alt="">
+							<span class="price-ice">415 Р/<span class="item-size">кг</span></span>
+						</div>	
+						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+						<div class="item-label">Хит</div>
+					</li>
+				</ul>	
+				<section class="features">
+					<h4 class="g-title-h4">Магазин глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h4>
+					<ul class="features-list">
+						<li class="features-list-ice">
+							<p>Все наше мороженное изготавливается на собственном
+							производстве, с использованием современного оборудования
+							и проверенных временем технологий</p>
+						</li>
+						<li class="features-list-leaf">
+							<p>Для приготовления мороженного используются настоящие
+							сливки и молоко высочайшего качества. Все дополнительные
+							ингридиенты и добавки произведены из натурального,
+							экологически чистого сырья.</p>
+						</li>
+						<li class="features-list-cow">
+							<p>Закупка ингридиентов производится только у проверенных
+							феремерских хозяйств и компаний, с которыми нас связывает
+							долговременное сотрудничество.</p>
+						</li>
+						<li class="features-list-temp">
+							<p>Доставка нашего мороженного до заказчиков осуществляется
+							в специальном термопаке, которая не дает мороженному
+							растаять в пути и позволяет ему сохранить свой превосходный
+							вкус.</p>
+						</li>	
+					</ul>	
+				</section>
+				<div class="news-mailing"> 
+					<article class="blog-news">
+						<h5 class="g-title-h5">Новое в нашем блоге</h5>
+						<a href="#">10 способов сервировки<br>
+						фруктовых щербетов<br>
+						к столу</a>
+					</article>
+					<article class="mailing">
+						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+						всего самого вкусного, что у нас происходит. Обещаем не спамить
+						и не слать всякой не нужной ерунды. Честно =)</p>
+						<form class="sign-up-mailing">
+							<input type="email" placeholder="Электронная почта">
+							<input type="submit" value="Отправить" class="button">
+						</form>
+					</article>
+					<div class="map">
+						<img src="img/map-pointer.png" alt="">
+						<div class="">
+							<p>Адрес главного офиса и<br>
+							офлайн магазина:<br>
+							<span class="address">ул. Большая Конюшенная<br>
+							19/8, Сантк-Петербург
+							</span>
+							</p>
+							<p>
+							Для заказов по телефону:<br>
+							<span class="phone-number">8 812 450-25-25</span><br>
+							(c 10 до 20 ежедневно)
+							</p>
+							<a class="button" href="">Форма обратной связи</a>
+						</div>
+					</div>
 				</div>
-			</div>
-
-			<!-- 
-				Блок карты — по клику на кнопку «форма обратной связи» возникает модальное окно с формой отправки сообщения (смотрите папку слоёв «Ховеры» в `gllacy-index.psd`), окно позиционируется относительно вьюпорта, а не страницы. При вводе текста в поле формы, «плейсхолдер» должен отобрабразиться над полем (смотрите папку слоёв «Фидбек» в `styleguide.psd`). Достаточно реализации с обычными плейсхолдерами.
-				Соответственно, нет разметки формы
-			 -->
+				 <form class="feedback-form" hidden>
+					<div class="title-feedback-form">Мы обязательно вам ответим!</div>
+					<input type="text" placeholder="Как вас зовут?">
+					<input type="email" placeholder="Ваша почта для ответа?">
+					<textarea placeholder="Напишите что нибудь..." class="feedback-form-textarea"></textarea>
+					<input type="submit" value="Отправить">
+				 </form>
+			</div>	 
 		</main>
 		<footer class="main-footer">
 			<div class="container">
 				<div class="footer-social">
-					<a class="social-btn social-btn-twitter" href="#"></a> <!-- Желательно писать внутри текстом что за соц сеть -->
-					<!-- 
-					<a class="social-btn social-btn-twitter" href="#">Twitter</a> - так лучше
-					Потому что если не загрузятся стили, то пользователь вообще не увидит этих ссылок
-					В случае же с текстом увидит и сможет перейти. А текст можно будет убрать через css
-					 -->
-					<a class="social-btn social-btn-insta" href="#"></a>
-					<a class="social-btn social-btn-facebook" href="#"></a>
-					<a class="social-btn social-btn-vk" href="#"></a>
+					<a class="social-btn social-btn-twitter" href="#">Twitter</a>
+					<a class="social-btn social-btn-insta" href="#">Instagram</a>
+					<a class="social-btn social-btn-facebook" href="#">Facebook</a>
+					<a class="social-btn social-btn-vk" href="#">Vkontakte</a>
 				</div>
 				<div class="footer-info">
-					<img src="" class="footer-heart"> <!-- Иконки лучше через css -->
-					<a href="#" class="footer-info-left">Для поставщиков</a>
-					<a href="#" class="footer-info-left">О производстве</a>
-					<a href="#" class="footer-info-right">Наши документы</a>
-					<a href="#" class="footer-info-right">Экологические стандарты</a>
+					<div class="footer-heart"></div> 
+					<a href="#" class="footer-info-providers">Для поставщиков</a>
+					<a href="#" class="footer-info-production">О производстве</a>
+					<a href="#" class="footer-info-documents">Наши документы</a>
+					<a href="#" class="footer-info-standarts">Экологические стандарты</a>
 				</div>
 				<div class="footer-copyright">
-					<img src="img/footer-logo" class="footer-logo"> - 
+					<img src="img/footer-logo.svg" class="footer-logo"> 
 					<p>Сделано в
 					<a class="" href="https://htmlacademy.ry">HTML Academy</a>
 					2016
