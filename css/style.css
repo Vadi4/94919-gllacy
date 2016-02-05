@@ -10,6 +10,7 @@ body {
 	color: #ffffff;
 	font-family: Roboto, Arial, sans-serif;
 	font-weight: normal;
+	/*background-color: #849d8f;*/
 }
 
 h1 {
@@ -31,3 +32,159 @@ h4 {
 h5 {
 	font-size:16px;
 }
+
+* {
+	outline: 1px solid red;
+}
+
+.container {
+	width: 860px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.main-header {
+	background: #849d8f;
+}
+
+	.main-navigation {
+		float: left;
+		width: 580px;
+	}
+	
+	.user-block {
+		width: 260px;
+		float: right;
+	}
+	
+	.header-contacts {
+		float: right;
+	}
+	
+	
+.main-content {
+	background: #849d8f;
+}	
+	.offers {
+		margin-bottom: 40px;
+	}
+	
+		.offer {
+			width: 420px;
+		}
+		
+			.offer-raspberries {
+				float: left;
+				background: #9d1d3a;
+			}
+			
+			.offer-chocolate {
+				float: right;
+				background: #371e11;
+			}
+		
+	.items {
+		margin-bottom: 40px;
+		padding-left: 0px; 		
+		font-size: 0px;
+	}
+		
+		.item {
+			display: inline-block;
+			float: left;
+			vertical-align: top;
+			width: 200px;
+			margin-right: 20px;
+			font-size: 16px;
+		}
+		
+			.item:nth-child(4n) {
+				margin-right: 0px;
+			}
+		
+	.features {
+		padding: 25px 20px;
+		margin-bottom: 40px;
+		background: #ece0c7;
+	}	
+	
+		.features-list {
+			padding-left: 0px;
+			font-size: 0px;
+		}
+		
+			.features-list li {
+				width: 350px;
+				display: inline-block;
+				font-size: 16px;
+			}
+			
+				.features-list-ice,
+				.features-list-leaf {
+					float: left;
+					margin-left: 52px;
+				}
+				
+				.features-list-cow,
+				.features-list-temp {
+					float: right;
+				}
+				
+	.news-mailing {
+		margin-bottom: 40px;
+	}
+		.news-mailing article{
+			width: 420px;
+			min-height: 220px;
+		}
+			.blog-news{
+				float: left;
+				background: fff;
+			}
+			
+			.mailing {
+				float: right;
+				background: f8f7f4;
+			}
+	
+	.map {
+		min-height: 430px;
+		/*background: #fff;*/
+	}
+	
+	.contacts {
+		float: right;
+		width: 240px;
+		min-height: 305px;
+		padding: 25px 30px;
+		background: fefefe; /*не применял бг цвет , не видно текста*/
+	}
+	
+.main-footer {
+	background: #849d8f;
+}
+
+	.footer-social {
+		float: left;
+		width: 200px;
+		margin-right: 20px;
+		padding: 20px 0;
+	}
+	
+	.footer-info {
+		float: left;
+		width: 420px;
+		padding: 20px 0;
+	}
+	
+	.footer-copyright {
+		float: right;
+		width: 200px;
+		padding: 20px 0;
+	}
+		
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}	
