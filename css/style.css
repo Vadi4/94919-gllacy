@@ -50,8 +50,20 @@ h5 {
 	.main-navigation {
 		float: left;
 		width: 580px;
+		font-size: 0px;
 	}
-	
+		.main-navigation ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+		
+			.main-navigation-list li {
+				display: inline-block;
+				vertical-align: top;
+				font-size: 16px;
+			}
+		
 	.user-block {
 		width: 260px;
 		float: right;
@@ -82,13 +94,35 @@ h5 {
 				float: right;
 				background: #371e11;
 			}
-		
-	.items {
-		margin-bottom: 40px;
-		padding-left: 0px; 		
+			
+	.breadcrumbs {
 		font-size: 0px;
+		list-style: none;
+		padding: 0;
 	}
 		
+		.breadcrumbs li {
+			font-size: 14px;
+			display: inline-block;
+		}
+		
+	.select-ice {
+		background: #849d8f; /* про фонт сайз не забыл, не знаю как всем элементам вернуть значение фонт сайза*/
+		margin-bottom: 40px;
+	} 	
+	
+		.select-ice > div{
+			display: inline-block;
+			vertical-align: top;
+		}
+		
+	.items {
+		margin-bottom: 40px;		
+		font-size: 0px;
+		list-style: none;
+        padding: 0;
+	}
+	
 		.item {
 			display: inline-block;
 			float: left;
@@ -96,11 +130,16 @@ h5 {
 			width: 200px;
 			margin-right: 20px;
 			font-size: 16px;
+			min-height: 315px; /* пока другого решения не придумал ...(что бы не ломались строки с мороженками)*/
 		}
 		
 			.item:nth-child(4n) {
 				margin-right: 0px;
 			}
+			
+	.pagination {
+		float: right;
+	}		
 		
 	.features {
 		padding: 25px 20px;
@@ -109,8 +148,9 @@ h5 {
 	}	
 	
 		.features-list {
-			padding-left: 0px;
 			font-size: 0px;
+			list-style: none;
+			padding: 0;
 		}
 		
 			.features-list li {
@@ -181,7 +221,9 @@ h5 {
 		float: right;
 		width: 200px;
 		padding: 20px 0;
-	}
+	}	
+
+
 		
 .clearfix::after {
 	content: "";
