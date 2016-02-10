@@ -4,6 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 		<link href="css/normalize.css" type="text/css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -11,15 +12,15 @@
 		<header class="main-header">
 			<div class="container clearfix">
 				<a class="header-logo" href="#">
-					<img src="img/header-logo.svg" alt="GllacyShop">
+					<img src="img/header-logo.svg" width="153" height="63" alt="GllacyShop">
 				</a>
-				<nav class="main-navigation">
-					<ul class="main-navigation-list">
-						<li>
+				<nav class="header-nav">
+					<ul class="header-nav-list">
+						<li class="nav-list-item nav-list-item-covert">
 							<a href="#">Каталог</a>
-							<ul class="catalog-list" hidden>
+							<ul class="nav-list-inner">
 								<li>
-									<a href="#" class="catalog-list-news">Новости</a>
+									<a class="nav-list-new" href="#" >Новинки</a>
 								</li>
 								<li>
 									<a href="#">Сливочное</a>
@@ -35,52 +36,60 @@
 								</li>
 							</ul>
 						</li>
-						<li>
+						<li class="nav-list-item">
 							<a href="#">Доставка и оплата</a>
 						</li>
-						<li>
+						<li class="nav-list-item">
 							<a href="#">О Компании</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="user-block">
-					<a class="search" href="#"></a>
-					<form class="form-search" hidden>
-						<input type="text" value="Что ищем?">
+					<form class="form-search" action="https://echo.htmlacademy.ru" method="get">
+						<button class="form-search-btn" type="button">Поиск</button>
+						<div class="form-search-covert">
+							<input class="form-input" type="text" placeholder="Что ищем?">
+						</div>
 					</form>
-					<a class="enter" href="#">Вход</a>
-					<form class="form-enter" hidden>
-						<input type="email">
-						<input type="password">
-						<input type="submit" class="button">
-						<a href="#">Забыли пароль?<a>
-						<a href="#">Новая регистрация</a>
+					<form class="form-enter">
+						<a class="form-enter-link " href="#">Вход</a>
+						<div class="form-enter-covert">
+							<input class="form-enter-input" type="email" name="email">
+							<input class="form-enter-input" type="password" name="password">
+							<input class="form-enter-button button" type="submit"  value="Войти">
+							<a href="#">Забыли пароль?<a>
+							<a href="#">Новая регистрация</a>
+						</div>	
 					</form>
-					<a class="basket" href="#">Пусто</a>
-					<form class="form-basket" hidden>
-						<ul class="basket-list">
-							<li>
-								<input type="checkbox" id="basker-offer-1">
-								<label for="basker-offer-1">
-									<span class="basket-kind-of-ice">Пломбир с апельсиновым джемом</span>
-									<span class="basket-weight-ice">1,5</span>&times;
-									<span class="basket-price-ice">200 руб</span>
-									<span class="basket-total-cost-ice">300 руб</span>
-								</label>
-							</li>	
-							<li>
-								<input type="checkbox" id="basker-offer-2">
-								<label for="basker-offer-2">
-									<span class="basket-kind-of-ice">Клубничный пломбир с присыпкой из белого шоколада</span>
-									<span class="basket-weight-ice">1,5</span>&times;
-									<span class="basket-price-ice">300 руб</span>
-									<span class="basket-total-cost-offer">450 руб</span>
-								</label>
-							</li>
-						</ul>	
-						<span class="basket-total-price-offer">Итого: 750руб</span>	
-						<input type="submit" class="button">
-					</form>
+					<div class="basket" hidden>
+						<a class="basket-link" href="#">Пусто</a>
+						<table class="basket-table">
+							<tr>
+							    <td><button class="basket-table-button" type="button"></button></td>
+								<td><img class="basket-table-img" src="img/butter-cremebrulee-ice.png" width="33" height="33"></td>
+								<td><span class="basket-table-ice">Пломбир с апельсиновым джемом</span></td>
+								<td><span class="basket-table-weight">1,5кг</span>&times;<span class="basket-table-price">200 руб</span></td>
+								<td><span class="basket-table-cost">300руб</span></td>
+							</tr>
+							<tr>
+								<td><button class="basket-table-button" type="button"></button></td>
+								<td><img class="basket-table-img" src="img/butter-cremebrulee-ice.png" width="33" height="33"></td>
+								<td><span class="basket-table-ice">Клубничный пломбир с присыпкой из белого шоколада</span></td>
+								<td><span class="basket-table-weight">1,5кг</span>&times;<span class="basket-table-price">300руб</span></td>
+								<td><span class="basket-table-cost">450руб</span></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td colspan="2"><span class="basket-table-total-cost">Итого: 750 руб</span></td>
+							</tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td colspan="2"><a class="basket-table-link-order" href="#">Оформить заказ</a></td>
+						</table>
+					</div>
 				</div>
 				<div class="header-contacts">
 						<div class="header-contacts-time">c 10 до 20, ежедневно</div>
