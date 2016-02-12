@@ -4,7 +4,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href="css/normalize.css" type="text/css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
@@ -20,14 +20,14 @@
 					</div>
 					<nav class="header-nav">
 						<ul class="header-nav-list">
-							<li class="nav-list-item nav-list-item-covert">
-								<a href="#">Каталог</a>
+							<li class="nav-list-item nav-list-item-covert nav-list-item-current">
+								<a href="#" class="nav-list-catalog">Каталог</a>
 								<ul class="nav-list-inner">
 									<li>
 										<a class="nav-list-new" href="#">Новинки</a>
 									</li>
 									<li>
-										<a href="#">Сливочное</a>
+										<a class="nav-list-inner-current" href="#">Сливочное</a>
 									</li>
 									<li>
 										<a href="#">Щербеты</a>
@@ -68,30 +68,28 @@
 						<div class="basket">
 							<a class="basket-link" href="#">Пусто</a>
 							<table class="basket-table">
-								<tr>
+								<tr class="basket-table-item">
 									<td><button class="basket-table-button" type="button"></button></td>
 									<td><img class="basket-table-img" src="img/butter-cremebrulee-ice.png" width="33" height="33"></td>
 									<td><span class="basket-table-ice">Пломбир с апельсиновым джемом</span></td>
 									<td><span class="basket-table-weight">1,5кг</span>&times;<span class="basket-table-price">200 руб</span></td>
 									<td><span class="basket-table-cost">300руб</span></td>
 								</tr>
-								<tr>
+								<tr class="basket-table-item">
 									<td><button class="basket-table-button" type="button"></button></td>
 									<td><img class="basket-table-img" src="img/butter-cremebrulee-ice.png" width="33" height="33"></td>
 									<td><span class="basket-table-ice">Клубничный пломбир с присыпкой из белого шоколада</span></td>
 									<td><span class="basket-table-weight">1,5кг</span>&times;<span class="basket-table-price">300руб</span></td>
 									<td><span class="basket-table-cost">450руб</span></td>
 								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td></td>
+								<tr class="basket-table-total">
+									<td colspan="3"></td>
 									<td colspan="2"><span class="basket-table-total-cost">Итого: 750 руб</span></td>
 								</tr>
-									<td></td>
-									<td></td>
-									<td></td>
+								<tr class="basket-table-order">
+									<td colspan="3"></td>
 									<td colspan="2"><a class="basket-table-link-order" href="#">Оформить заказ</a></td>
+								</tr>	
 							</table>
 						</div>
 					</div>
@@ -128,97 +126,79 @@
 							<label for="btn-3"></label>
 						</div>	
 					</div>
-					<!--
-					<div class="slider">
-						<div class="slider-radio">
-							<input  type="radio" name="slider-radio" checked>
-							<input  type="radio" name="slider-radio">
-							<input  type="radio" name="slider-radio">
-						</div>	
-						<div class="slider-slide">
-							<img src="img/index_ice_main.png" width="900px" height="880px" alt="">
-							<h2 class="g-title-h2 slider-slide-h2">Крем-брюле и пломбир с малиновым джемом</h2>
-							<a class="button" href="#">Давайте оба</a>
-						</div>
-					</div>
-					-->
 					<section class="offers clearfix">
 						<article class="offer offer-raspberries">
 							<h3 class="g-title-h3">Малинка даром!</h3>
 							<p class="offer-text">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-							<a class="button" href="#">Хочу варенье!</a>
+							<a class="button offer-button" href="#">Хочу варенье!</a>
 						</article>
 						<article class="offer offer-chocolate">
 							<h3 class="g-title-h3">Шоколадки даром!</h3>
 							<p class="offer-text">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-							<a class="button" href="#">Хочу шоколадки!</a>
+							<a class="button offer-button" href="#">Хочу шоколадки!</a>
 						</article>
 					</section>	
 					<ul class="items clearfix">
 						<li class="item">
 							<div class="item-image">	
 								<img src="img/butter-orange-ice.png" width="200" height="200" alt="">
-								<span class="item-price">310 Р/<span class="item-size">кг</span></span>
+								<span class="item-price">310 Р/<span class="item-weight">кг</span></span>
 							</div>	
-							<a class="item-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+							<a class="item-caption" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 							<div class="item-label">Хит</div>	
 						</li>
 						<li class="item">
 							<div class="item-image">
 								<img src="img/butter-coffe-ice.png" width="200" height="200" alt="">
-								<span class="price-ice">380 Р/<span class="item-size">кг</span></span>
+								<span class="item-price">380 Р/<span class="item-weight">кг</span></span>
 							</div>	
-							<a class="item-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
+							<a class="item-caption" href="#">Сливочно-кофейное с кусочками шоколада</a>
 							<div class="item-label">Хит</div>						
 						</li>
 						<li class="item">
 							<div class="item-image">
 								<img src="img/butter-strawberry-ice.png" width="200px" height="200px" alt="">
-								<span class="price-ice">310 Р/<span class="item-size">кг</span></span>
+								<span class="item-price">310 Р/<span class="item-weight">кг</span></span>
 							</div>	
-							<a href="#">Сливочно клубничное с присыпкой из белого шоколада</a>
+							<a class="item-caption" href="#">Сливочно клубничное с присыпкой из белого шоколада</a>
 							<div class="item-label">Хит</div>
 						</li>
 						<li class="item">
 							<div class="item-image">
 								<img src="img/butter-cremebrulee-ice.png" width="200px" height="200px" alt="">
-								<span class="price-ice">415 Р/<span class="item-size">кг</span></span>
+								<span class="item-price">415 Р/<span class="item-weight">кг</span></span>
 							</div>	
-							<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+							<a class="item-caption" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 							<div class="item-label">Хит</div>
 						</li>
 					</ul>	
 					<section class="features clearfix">
-						<h4 class="g-title-h4">Магазин глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h4>
-						<ul class="features-list clearfix">
-							<li class="features-list-ice">
-								Все наше мороженное изготавливается на собственном
-								производстве, с использованием современного оборудования
-								и проверенных временем технологий
-							</li>
-							<li class="features-list-cow">
-								Закупка ингридиентов производится только у проверенных
-								феремерских хозяйств и компаний, с которыми нас связывает
-								долговременное сотрудничество.
-							</li>
-							<li class="features-list-leaf">
-								Для приготовления мороженного используются настоящие
-								сливки и молоко высочайшего качества. Все дополнительные
-								ингридиенты и добавки произведены из натурального,
-								экологически чистого сырья.
-							</li>
-							<li class="features-list-temp">
-								Доставка нашего мороженного до заказчиков осуществляется
-								в специальном термопаке, которая не дает мороженному
-								растаять в пути и позволяет ему сохранить свой превосходный
-								вкус.
-							</li>	
-						</ul>	
+						<h4 class="g-title-h4 features-title-h4">Магазин глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h4>
+						<table class="features-table">
+							<tr class="features-table-row">
+								<td class="features-table-cell features-table-ice">Все наше мороженное 
+								изготавливается на собственном производстве, с использованием современного 
+								оборудования и проверенных временем технологий</td>
+								<td class="features-table-cell features-table-cow">Закупка ингридиентов
+								производится только у проверенных феремерских хозяйств и компаний, 
+								с которыми нас связывает долговременное сотрудничество.</td>
+							</tr>
+							<tr class="features-table-row">
+								<td class="features-table-cell features-table-leaf">Для приготовления 
+								мороженного используются настоящие сливки и молоко высочайшего качества. 
+								Все дополнительные ингридиенты и добавки произведены из натурального,
+								экологически чистого сырья.</td>
+								<td class="features-table-cell features-table-temp">Доставка нашего 
+								мороженного до заказчиков осуществляется в специальном термопаке,
+								которая не дает мороженному	растаять в пути и позволяет ему
+								сохранить свой превосходный	вкус.</td>
+							</tr>
+						</table>
 					</section>
 					<div class="news-mailing clearfix"> 
 						<article class="blog-news">
 							<h5 class="g-title-h5">Новое в нашем блоге</h5>
-							<a href="#">10 способов сервировки<br>
+							<a class="news-mailing-link" href="#">10 способов сервировки<br>
 							фруктовых щербетов<br>
 							к столу</a>
 						</article>
@@ -232,9 +212,6 @@
 							</form>
 						</article>
 					</div>
-				</div>	
-				<div class="map">
-					<img src="img/map-pointer.png" alt="">
 					<div class="contacts">
 						<p>Адрес главного офиса и<br>
 						офлайн магазина:<br>
@@ -249,6 +226,9 @@
 						</p>
 						<a class="button" href="">Форма обратной связи</a>
 					</div>
+				</div>
+				<div class="map"> 
+					<img src="img/map-pointer.png" alt="">	
 				</div>
 			</main>
 			<footer class="main-footer">

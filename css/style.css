@@ -7,7 +7,7 @@ body {
 body {
 	font-size: 16px;
 	line-height: 22px;
-	color: #ffffff;
+	color: #fff;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-weight: normal;
 	background: #849d8f;
@@ -48,20 +48,23 @@ h5 {
 }
 
 	.container {
+		position: relative;
 		width: 860px;
 		padding: 0 20px;
 		margin: 0 auto;
 	}
 
 	.main-header {
+		color: #fff;
+		background: #849d8fl;
 	}
 
 		.header-logo {
 			float: left;
 			text-decoration: none;
 			margin: 10px 16px 0px -5px;
-			height: 63px;	/* снизу появляется непонятный отступ с помощью font-size: 0px; не удалось сбросить его
-								поэтому пока что так сделал */
+			height: 63px;
+			width: 153px;
 		}
 
 		.header-nav {
@@ -75,38 +78,84 @@ h5 {
 				font-size: 0;
 				padding: 0;
 				margin: 0;
-				
-				
 			}
 			
 				.nav-list-item {
 					display: inline-block;
 					vertical-align: top;
 					font-size: 16px;
-					padding: 8px 14px 10px 14px;
+					border-radius: 13px;
 				}
 					
 					.nav-list-item > a {
 						color: #fff;
+						display: block;
+						padding: 8px 14px 10px 14px;
+						font-weight: bold;
+						border-radius: 13px;
 					}
 					
-						.nav-list-inner {
-							display: none;
-							font-size: 14px;
-							list-style: none;
-							padding: 0;
-							margin: 0;
-							background: #f8f7f4;
-							position: absolute;
-							top: 38px;
-							left: -7px;
-						}
-						
-							.nav-list-inner  a{
-								text-decoration: none;
-								color: #343434;
-								display: block;
+					.nav-list-item > a:hover {
+						background: #f7f6f3;
+						color: #333333;
+						text-decoration: none;
+					}
+					
+					.nav-list-item > a:active {
+						background: #ededed;
+						box-shadow: ; /* потом не забыть сделать тень )*/
+					}
+					
+					.nav-list-item-current {
+						background: #d07058;
+						text-decoration: none;
+						color: #fff;
+					}
+					
+							.nav-list-inner {
+								display: none;
+								font-size: 14px;
+								list-style: none;
+								padding: 0;
+								margin: 0;
+								width: 145px;
+								background: #f8f7f4;
+								position: absolute;
+								z-index: 25;
+								top: 38px;
+								left: -7px;
 							}
+							
+								.nav-list-inner  a{
+									text-decoration: none;
+									color: #343434;
+									display: block;
+									padding: 5px 20px;
+								}
+								
+								.nav-list-inner  a:hover {
+									background: #fbded8;
+								}
+								
+								.nav-list-inner  a:active {
+									background: #f6b5a5;
+								}
+								
+								.nav-list-inner .nav-list-inner-current {
+									background: #d07058;
+									color: white;
+								}
+								
+								.nav-list-inner .nav-list-inner-current:hover {
+									background: #fbded8;
+									color: #343434;
+								}
+								
+								.nav-list-inner .nav-list-new  {
+									font-weight: bold;
+									padding-bottom: 10px;
+									border-bottom: 1px solid #d1d0ce;
+								}
 					
 					.nav-list-item-covert {
 							position: relative;
@@ -118,7 +167,8 @@ h5 {
 				
 		.user-block {
 			float: right;
-			width: 260px;
+			font-size: 0;
+			max-width: 260px;
 			margin-top: 23px;
 		}
 			.form-search {
@@ -126,9 +176,16 @@ h5 {
 				vertical-align: top;
 				font-size: 14px;
 				position: relative;
+				height: 32px;
+				width: 32px;
 			}
 			
+				.form-search-btn {
+					display: none;
+				}
+				
 				.form-search-covert {
+					background: #f8f7f4;
 					display: none;
 					position: absolute;
 					top: 38px;
@@ -140,11 +197,27 @@ h5 {
 					z-index: 25;
 				}
 				
+				.form-search-input {
+						width: 240px;
+						height: 37px;
+						margin: 15px 16px;
+						border: 1px solid #d3d3d2;
+				}
+				
 			.form-enter {
 				display: inline-block;
 				vertical-align: top;
 				position: relative;
+				font-size: 14px;
 			}
+			
+				.form-enter-link {
+					display: inline-block;
+					vertical-align: top;
+					text-decoration: none;
+					color: #fff;
+					padding: 8px 15px 8px 44px;
+				}
 				
 				.form-enter-covert {
 					display: none;
@@ -152,7 +225,23 @@ h5 {
 					background: #f8f7f4;
 					top: 38px;
 					right: 0px;
+					width: 243px;
+					height: 175px;
+					padding: 20px 15px 15px 15px;
 				}
+				
+					.form-enter-input {
+						width: 240px;
+						height: 37px;
+						margin-bottom: 10px;
+					}
+					
+					.form-enter-button  {
+						margin-top: 5px;
+						width: 100px;
+						height: 35px;
+						font-size: 14px;
+					}
 				
 				.form-enter:hover .form-enter-covert {
 					display: block;
@@ -161,12 +250,27 @@ h5 {
 			
 			.basket {
 				display: inline-block;
+				vertical-align: top;
+				padding: 8px 34px 8px 45px;
 				position: relative;
+				font-size: 14px;
 			}	
 			
+				.basket-link {
+					display: block;
+					text-decoration: none;
+					color: #fff;
+				}
+				
 				.basket-table {
 					display: none;
+					width: 538px;
+					color: #333333;
 				}
+				
+					.basket-table-item td {
+						height: 70px;
+					}
 				
 				.basket:hover .basket-table {
 					display: block;
@@ -176,6 +280,8 @@ h5 {
 					top: 38px;
 					right: 0px;
 				}
+				
+				
 
 		.header-contacts {
 			float: right;
@@ -190,6 +296,7 @@ h5 {
 			padding-top: 270px;
 			text-align: center;
 			color: #fff;
+			margin-bottom: 40px;
 		}
 			.slide {
 				display: none;
@@ -214,10 +321,10 @@ h5 {
 				
 				.slider-controls label {
 					display: inline-block;
+					vertical-align: top;
 					width: 17px;
 					height: 17px;
 					margin-right: 8px;
-					vertical-align: top;
 					background-color: transparent;
 					border: 2px solid #fff;
 					border-radius: 50%;
@@ -266,14 +373,17 @@ h5 {
 
 #btn-1:checked ~ .site-wrapper {
 	background-color: #849d8f;
+	background-image: url("../img/slide-1.png"); 
 }
 
 #btn-2:checked ~ .site-wrapper {
 	background-color: #8996a6;
+	background-image: url("../img/slide-2.png"); 
 }
 
 #btn-3:checked ~ .site-wrapper {
 	background-color: #9d8b84;
+	background-image: url("../img/slide-3.png"); 
 }		
 
 #btn-1:checked ~ .site-wrapper label[for="btn-1"],
@@ -305,17 +415,40 @@ h5 {
 		
 			.offer {
 				width: 420px;
+				min-height: 230px;
+				border-radius: 11px;
+				position: relative;
 			}
 			
 				.offer-raspberries {
 					float: left;
 					background: #9d1d3a;
+					background-image: url("../img/bg_raspberries.png");
 				}
+					
+					.g-title-h3 {
+						margin: 25px 0 25px 20px;
+						padding: 0;
+					}
+					
+					.offer-text {
+						margin: 0 20px;
+					}
 				
 				.offer-chocolate {
 					float: right;
 					background: #371e11;
+					background-image: url("../img/bg_chocolate.png");
 				}
+					
+					.offer-button {
+						position: absolute;
+						text-decoration: none;
+						color: white;
+						padding: 12px 20px;
+						right: 20px;
+						bottom: 22px;
+					}
 				
 		.breadcrumbs {
 			font-size: 0px;
@@ -326,6 +459,7 @@ h5 {
 			.breadcrumbs li {
 				font-size: 14px;
 				display: inline-block;
+				vertical-align: top;
 			}
 			
 		.select-ice {
@@ -338,14 +472,15 @@ h5 {
 				vertical-align: top;
 			}
 			
-		.items {
-			margin-bottom: 40px;		
+		.items {		
 			font-size: 0px;
 			list-style: none;
 			padding: 0;
+			margin-bottom: 40px;
 		}
 		
 			.item {
+				position: relative;
 				display: inline-block;
 				float: left;
 				vertical-align: top;
@@ -354,9 +489,26 @@ h5 {
 				font-size: 16px;
 				min-height: 315px; /* пока другого решения не придумал ...(что бы не ломались строки с мороженками)*/
 			}
+				
+				.item-price {
+					position: absolute;
+					left: 0px;
+					top: 145px;
+				}
 			
 				.item:nth-child(4n) {
 					margin-right: 0px;
+				}
+				
+				.item-caption {
+					color: white;
+					text-decoration: none;
+				}
+				
+				.item-label {
+					position: absolute;
+					top: 0;
+					left: 0;
 				}
 				
 		.pagination {
@@ -364,30 +516,42 @@ h5 {
 		}		
 			
 		.features {
-			padding: 25px 20px;
 			margin-bottom: 40px;
 			background: #ece0c7;
+			background-image: url("../img/pattern_waffle.jpg"); 
+			border-radius: 12px;
+			color: #323232;
 		}	
-		
-			.features-list {
-				font-size: 0px;
-				list-style: none;
-				padding: 0;
-			}
+				
+			.features-title-h4 {
+				margin: 0 20px 35px 20px;
+				padding-top: 27px;
+			}	
+
+			.features-table {
+			}	
 			
-				.features-list li {
-					width: 350px;
-					display: inline-block;
+				.features-table-cell {
+					width: 343px;
+					padding-left: 75px;
 					vertical-align: top;
-					font-size: 16px;
+					padding-bottom: 30px;
+					position: relative;
 				}
 				
-					.features-list li:nth-child(2n) {
-						margin-left: 52px;
-					}
+				.features-table-cell:after {
+					content: "";
+					width: 47px;
+					height: 47px;
+					position: absolute;
+					top: -16px;
+					left: 21px;
+					background-color: black;
+				}
 					
 		.news-mailing {
 			margin-bottom: 40px;
+			color: #353535;
 		}
 			.news-mailing article {
 				width: 420px;
@@ -395,42 +559,71 @@ h5 {
 			}
 				.blog-news {
 					float: left;
-					background: fff;
+					background: #fff;
+					background: url("../img/bg_strawberry_news.jpg");
+					border-radius: 11px;
 				}
+				
+					.news-mailing-link {
+						color: #353535; 
+					}
 				
 				.mailing {
 					float: right;
-					background: f8f7f4;
+					background: #f8f7f4;
+					border-radius: 11px;
+					background-image: url("../img/bg_mailing.png");
 				}
+			
+		.contacts {
+			position: absolute;
+			right: 20px;
+			bottom: -373px;
+			border-radius: 12px;
+			width: 302px;
+			min-height: 305px;
+			color: #343434;
+			background: #fefefe;
+		}
 		
 		.map {
-			min-height: 430px;
-			/*background: #fff;*/
+			height: 430px;
+			background: #f0ead4;
 		}
-		
-		.contacts {
-			float: right;
-			width: 240px;
-			min-height: 305px;
-			padding: 25px 30px;
-			background: fefefe; /*не применял бг цвет , не видно текста*/
-		}
-		
+	
 	.main-footer {
 	}
 
 		.footer-social {
 			float: left;
 			width: 200px;
-			margin-right: 20px;
 			padding: 20px 0;
+			font-size: 0;
 		}
+			
+			.social-btn {
+				display: inline-block;
+				vertical-align: top;
+				text-decoration: none;
+				width: 31px;
+				height: 31px;
+				margin-right: 18px;
+			}
 		
 		.footer-info {
 			float: left;
-			width: 420px;
+			width: 440px;
 			padding: 20px 0;
+			font-size: 0;
 		}
+		
+			.footer-info a {   /* самому не нравиться как сделал пока что так оставил ) */
+				display: inline-block;
+				vertical-align: top;
+				font-size: 13px;
+				color: white;
+				width: 220px;
+			}
 		
 		.footer-copyright {
 			float: right;
