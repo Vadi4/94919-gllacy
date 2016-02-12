@@ -564,9 +564,26 @@ h5 {
 					border-radius: 11px;
 				}
 				
-					.news-mailing-link {
-						color: #353535; 
+					.g-title-h5 {
+						margin: 20px 0 14px 25px;
+						color: #5a5a5a;
+						font-size: 16px;
 					}
+				
+					.news-mailing-link {
+						display: inline-block;
+						vertical-align: top;
+						color: #353535;
+						margin-left: 25px;
+						font-size: 24px;
+						line-height: 31px;
+						max-width: 290px;
+					}
+					
+						.blog-news-link-bg {
+							background-color: rgba(255, 255, 255, 0.7);
+							padding: 0 10px 2px 0; /* почему то паддинг в 1-ой строчке срправа не виден ...*/
+						}
 				
 				.mailing {
 					float: right;
@@ -574,6 +591,25 @@ h5 {
 					border-radius: 11px;
 					background-image: url("../img/bg_mailing.png");
 				}
+				
+					.mailing-text {
+						margin: 38px 30px 20px 26px;
+						font-size: 16px;
+					}
+					
+						.mailing-form-email {
+							width: 228px;
+							height: 42px;
+							margin-left: 27px;
+							margin-right: 12px;
+						}
+						
+						.mailing-form-submit {
+							color: #fff;
+							text-decoration: none;
+							font-size: 17px;
+							padding: 14px 20px 16px 19px;
+						}
 			
 		.contacts {
 			position: absolute;
@@ -585,7 +621,32 @@ h5 {
 			color: #343434;
 			background: #fefefe;
 		}
-		
+			.contacts p{
+				margin-left: 26px;
+				font-size: 14px;
+			}
+			
+			.contacts-address {
+				margin-top: 33px;
+			}
+				
+					.contacts-address-street,
+					.contacts-phone-number {
+						font-size: 18px;
+						font-weight: bold;
+					}
+				
+			.contacts-phone {
+				margin-bottom: 26px;
+			}
+			
+			.contacts-button {
+				margin-left: 26px;
+				padding: 10px 35px 18px 33px;
+				color: #fff;
+				text-decoration: none;
+			}
+	
 		.map {
 			height: 430px;
 			background: #f0ead4;
