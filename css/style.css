@@ -37,6 +37,33 @@ h5 {
 	outline: 1px solid red;
 }
 
+.button {
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;
+	text-decoration: none;
+	background: #f26843;
+	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+	background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	border: none;
+}
+
+.button:hover {
+	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+			
+.button:active {
+	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}			
+
 .slider-radio-covert {
 	display: none;
 }
@@ -106,7 +133,7 @@ h5 {
 						box-shadow: ; /* потом не забыть сделать тень )*/
 					}
 					
-					.nav-list-item-current {
+					.nav-list-item-current > a {
 						background: #d07058;
 						text-decoration: none;
 						color: #fff;
@@ -124,6 +151,7 @@ h5 {
 								z-index: 25;
 								top: 38px;
 								left: -7px;
+								border-radius: 3px;
 							}
 							
 								.nav-list-inner  a{
@@ -171,13 +199,17 @@ h5 {
 			max-width: 260px;
 			margin-top: 23px;
 		}
+			
 			.form-search {
 				display: inline-block;
 				vertical-align: top;
 				font-size: 14px;
 				position: relative;
+				margin-right: 10px;
 				height: 32px;
 				width: 32px;
+				background: rgba(255, 255, 255, 0.5);
+				border-radius: 100%;
 			}
 			
 				.form-search-btn {
@@ -190,6 +222,12 @@ h5 {
 					position: absolute;
 					top: 38px;
 					right: 0px;
+					border-radius: 3px;
+				}
+				
+				.form-search:hover  {
+					background: #f8f7f4;
+					border-radius: 100%;
 				}
 				
 				.form-search:hover .form-search-covert {
@@ -197,11 +235,17 @@ h5 {
 					z-index: 25;
 				}
 				
+				.form-search-covert:hover .from-search {
+					background: #f8f7f4;
+				}
+				
 				.form-search-input {
-						width: 240px;
+						width: 229px;
 						height: 37px;
 						margin: 15px 16px;
+						padding-left: 11px;
 						border: 1px solid #d3d3d2;
+						border-radius: 3px;
 				}
 				
 			.form-enter {
@@ -209,6 +253,8 @@ h5 {
 				vertical-align: top;
 				position: relative;
 				font-size: 14px;
+				background: rgba(255, 255, 255, 0.5);
+				border-radius: 12px;
 			}
 			
 				.form-enter-link {
@@ -217,12 +263,20 @@ h5 {
 					text-decoration: none;
 					color: #fff;
 					padding: 8px 15px 8px 44px;
+					/* margin-right: 10px; блоки разьезжаються надо проверить размеры*/ 
+				}
+				
+				.form-enter-link:hover {
+					background: #f8f7f4;
+					border-radius: 12px;
+					color: #323232;
 				}
 				
 				.form-enter-covert {
 					display: none;
 					position: absolute;
 					background: #f8f7f4;
+					border-radius: 3px;
 					top: 38px;
 					right: 0px;
 					width: 243px;
@@ -231,9 +285,12 @@ h5 {
 				}
 				
 					.form-enter-input {
-						width: 240px;
+						width: 225px;
 						height: 37px;
+						padding-left: 15px;
 						margin-bottom: 10px;
+						border: 1px solid #d3d3d2;
+						border-radius: 3px;
 					}
 					
 					.form-enter-button  {
@@ -251,25 +308,82 @@ h5 {
 			.basket {
 				display: inline-block;
 				vertical-align: top;
-				padding: 8px 34px 8px 45px;
 				position: relative;
 				font-size: 14px;
 			}	
 			
 				.basket-link {
 					display: block;
+					padding: 8px 34px 8px 45px;
 					text-decoration: none;
 					color: #fff;
+					background: rgba(255, 255, 255, 0.5);
+					border-radius: 12px;
+				}
+				
+				.basket-link:hover {
+					background: #f8f7f4;
+					border-radius: 12px;
+					color: #323232;
 				}
 				
 				.basket-table {
 					display: none;
 					width: 538px;
+					height: 240px;
 					color: #333333;
+					border-radius: 3px;
 				}
 				
 					.basket-table-item td {
 						height: 70px;
+						text-align: center;
+					}
+					
+					.table-cell-close {
+						width: 32px;
+					}
+					
+					.table-cell-ice {
+						width: 50px;
+					}
+					
+					.table-cell-caption {
+						width: 238px;
+						text-align: left;
+					}
+					
+					.table-cell-weight {
+						width: 125px;
+					}
+					
+					.table-cell-cost {
+						width: 96px;
+					}
+					
+				.basket-table-total,
+				.basket-table-order {
+						text-align: right;
+						margin-right: 10px;
+				}
+
+				.basket-table-total {
+					height: 40px;
+				}
+				
+				.basket-table-order {
+					height: 62px;
+				}
+				
+					.basket-table-total-cost {
+						margin-right: 25px;
+					}
+					
+					.basket-table-link-order {
+						margin-right: 15px;
+						padding: 10px 20px 13px 22px;
+						text-decoration: none;
+						color: #fff;
 					}
 				
 				.basket:hover .basket-table {
@@ -281,8 +395,6 @@ h5 {
 					right: 0px;
 				}
 				
-				
-
 		.header-contacts {
 			float: right;
 			position: relative;
@@ -291,6 +403,7 @@ h5 {
 
 	.main-content {
 	}	
+	
 		.slider {
 			position: relative;
 			padding-top: 270px;
@@ -331,6 +444,10 @@ h5 {
 					cursor: pointer;
 				}
 				
+				.slider-controls label:hover {
+					background: rgba(255, 255, 255, 0.5);
+				}
+				
 				.slide-btn {
 					display: inline-block;
 					padding: 12px 50px;
@@ -363,7 +480,7 @@ h5 {
 					background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
 					background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 					box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-				}
+				} 
 
 #btn-1:checked ~ .site-wrapper #slide-1,
 #btn-2:checked ~ .site-wrapper #slide-2,
@@ -456,21 +573,108 @@ h5 {
 			padding: 0;
 		}
 			
-			.breadcrumbs li {
+			.breadcrumbs-page {
 				font-size: 14px;
 				display: inline-block;
 				vertical-align: top;
+				position: relative;
+			}
+			
+				.breadcrumbs-page a {
+					color: #fff;
+					margin-right: 22px;
+				}
+				
+				.breadcrumbs-page:last-child a{
+					text-decoration: none;
+				}
+				
+			.breadcrumbs-page:not(:last-child):after {
+				content: "»"; /* не разобрался пока как вставить спецсимвол*/
+				position: absolute;
+				top: 0;
+				right: 8px;
 			}
 			
 		.select-ice {
-			background: #849d8f; /* про фонт сайз не забыл, не знаю как всем элементам вернуть значение фонт сайза*/
+			background: #849d8f;
 			margin-bottom: 40px;
+			font-size: 0;
 		} 	
 		
 			.select-ice > div{
 				display: inline-block;
 				vertical-align: top;
+				font-size: 16px;
+				color: #fff;
 			}
+			
+				.sort-list {
+					width: 192px;
+					height: 36px;
+					background: none;
+				}
+				
+			.price-range {
+				width: 218px;
+				height: 36px;
+			}
+
+			.fatness {
+				font-size: 0;
+			}
+			
+				.fatness-radio {
+					width: 410px;
+					margin: 0;
+				}
+				
+					.fatness-radio li {
+						display: inline-block;
+						vertical-align: top;
+						height: 36px;
+						list-style: none;
+					}
+			
+			.fillers {
+				width: 702px;
+			}
+				
+				.fillers-checkbox {
+					padding: 0;
+					margin: 0;
+				}
+			
+					.fillers-checkbox li{
+						list-style: none;
+						padding: 0;
+						margin: 0;
+						height: 36px;
+						display: inline-block;
+						vertical-align: top;
+						font-size: 16px;
+					}
+			
+			.select-ice-submit {
+				font-size: 16px;
+				margin-top: 15px;
+				float: right;
+				background: rgba(255, 255, 255, 0.2);
+				border: 1px solid #fff;
+				border-radius: 13px;
+				padding: 10px 26px 11px 28px;
+			}
+			
+			.select-ice-submit:hover {
+				background: #fafbfb;
+				color: #383939;
+			}
+			
+			.select-ice-submit:active {
+				background: #eaeaea;
+				box-shadow:; /*потом доделать... */
+			}
+			
 			
 		.items {		
 			font-size: 0px;
@@ -489,6 +693,15 @@ h5 {
 				font-size: 16px;
 				min-height: 315px; /* пока другого решения не придумал ...(что бы не ломались строки с мороженками)*/
 			}
+			
+			.item:hover {
+				background: rgba(255, 255, 255, 0.5);
+				border-radius: 3px;
+			}
+			
+			.item:hover .item-quick-review {
+				display: block;
+			}
 				
 				.item-price {
 					position: absolute;
@@ -502,13 +715,35 @@ h5 {
 				
 				.item-caption {
 					color: white;
-					text-decoration: none;
+					font-size: 16px;
+					display: block;
+					text-align: center;
+					margin: 0 9px;
 				}
 				
 				.item-label {
 					position: absolute;
 					top: 0;
 					left: 0;
+				}
+				
+				.item-quick-review {
+					position: absolute;
+					font-size: 15px;
+					margin-left: 10px;
+					border-radius: 12px;
+					width: 180px;
+					bottom: 10px;
+					text-align: center;
+					height: 25px;
+					color: #fff;
+					display: none;
+				}
+				
+				.item-label {
+					width: 60px;
+					height: 60px;
+					background: url("../img/hit.png");
 				}
 				
 		.pagination {
@@ -598,10 +833,11 @@ h5 {
 					}
 					
 						.mailing-form-email {
-							width: 228px;
+							width: 218px;
 							height: 42px;
 							margin-left: 27px;
 							margin-right: 12px;
+							padding-left: 10px;
 						}
 						
 						.mailing-form-submit {
@@ -691,7 +927,50 @@ h5 {
 			width: 200px;
 			padding: 20px 0;
 		}	
+		
+			.footer-copyright p {
+				padding: 0;
+				margin: 0;
+				font-size: 12px;
+			}
+			
+			.footer-copyright-link {
+				color: #fff;
+			}
 
+	.feedback-form {
+		width: 478px;
+		position: relative;
+		padding-top: 1px;
+		display: none;
+	}
+	
+		.title-feedback-form{
+			font-size: 24px;
+			font-weight: medium;
+			
+			margin: 20px 0 25px 25px;
+		}
+		
+		.feedback-form-input {
+			width: 265px;
+			margin-left: 14px;
+			margin-bottom: 20px;
+			padding: 12px 0 0 15px;
+		}
+		
+		.feedback-form-textarea {
+			width: 426px;
+			min-height: 153px;
+			margin-left: 14px;
+			margin-bottom: 96px; 
+		}
+		
+		.feedback-form-submit {
+			position: absolute;
+			bottom: 26px;
+			right: 24px;
+		}
 
 		
 .clearfix::after {
@@ -699,3 +978,4 @@ h5 {
 	display: table;
 	clear: both;
 }	
+
