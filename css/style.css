@@ -50,14 +50,16 @@ h5 {
 	border: none;
 }
 
-.button:hover {
+.button:hover,
+.slide-btn:hover {
 	background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
 	background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 			
-.button:active {
+.button:active,
+.slide-btn:active {
 	background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
 	background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
@@ -298,6 +300,7 @@ h5 {
 						width: 100px;
 						height: 35px;
 						font-size: 14px;
+						border-radius: 14px;
 					}
 				
 				.form-enter:hover .form-enter-covert {
@@ -320,6 +323,9 @@ h5 {
 					background: rgba(255, 255, 255, 0.5);
 					border-radius: 12px;
 				}
+					.basket-link-sum-items {
+						display: none;
+					}
 				
 				.basket-link:hover {
 					background: #f8f7f4;
@@ -382,8 +388,7 @@ h5 {
 					.basket-table-link-order {
 						margin-right: 15px;
 						padding: 10px 20px 13px 22px;
-						text-decoration: none;
-						color: #fff;
+						border-radius: 14px;
 					}
 				
 				.basket:hover .basket-table {
@@ -467,20 +472,6 @@ h5 {
 					border-radius: 100px;
 					box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 				}
-				
-				.slide-btn:hover {
-					background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-					background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
-					background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-					box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-				}
-
-				.slide-btn:active {
-					background:    -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
-					background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
-					background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-					box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-				} 
 
 #btn-1:checked ~ .site-wrapper #slide-1,
 #btn-2:checked ~ .site-wrapper #slide-2,
@@ -560,9 +551,8 @@ h5 {
 					
 					.offer-button {
 						position: absolute;
-						text-decoration: none;
-						color: white;
 						padding: 12px 20px;
+						border-radius: 18px;
 						right: 20px;
 						bottom: 22px;
 					}
@@ -841,8 +831,7 @@ h5 {
 						}
 						
 						.mailing-form-submit {
-							color: #fff;
-							text-decoration: none;
+							border-radius: 18px;
 							font-size: 17px;
 							padding: 14px 20px 16px 19px;
 						}
@@ -879,14 +868,36 @@ h5 {
 			.contacts-button {
 				margin-left: 26px;
 				padding: 10px 35px 18px 33px;
-				color: #fff;
-				text-decoration: none;
+				border-radius: 18px;
 			}
 	
 		.map {
 			height: 430px;
 			background: #f0ead4;
 		}
+		
+			.pagination {
+				font-size: 0;
+			}
+			
+				.pagination a{
+					display: inline-block;
+					vertical-align: top;
+					width: 16px;
+					height: 16px;
+					font-size: 16px;
+					text-decoration: none;
+					color: #fff;
+					text-align: center;
+					margin-left: 5px;
+				}
+				
+				a.pagination-current {
+					color: #353535;
+					background: #fff;
+					border-radius: 100%;
+					padding: 2px;
+				}
 	
 	.main-footer {
 	}
@@ -972,7 +983,6 @@ h5 {
 			right: 24px;
 		}
 
-		
 .clearfix::after {
 	content: "";
 	display: table;
