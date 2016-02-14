@@ -98,7 +98,7 @@ h5 {
 
 		.header-nav {
 			float: left;
-			width: 435px;
+			max-width: 435px;
 			margin-top: 23px;
 		}
 		
@@ -198,7 +198,7 @@ h5 {
 		.user-block {
 			float: right;
 			font-size: 0;
-			max-width: 260px;
+			max-width: 262px;
 			margin-top: 23px;
 		}
 			
@@ -208,8 +208,8 @@ h5 {
 				font-size: 14px;
 				position: relative;
 				margin-right: 10px;
-				height: 32px;
-				width: 32px;
+				height: 33px;
+				width: 33px;
 				background: rgba(255, 255, 255, 0.5);
 				border-radius: 100%;
 			}
@@ -265,7 +265,6 @@ h5 {
 					text-decoration: none;
 					color: #fff;
 					padding: 8px 15px 8px 44px;
-					/* margin-right: 10px; блоки разьезжаються надо проверить размеры*/ 
 				}
 				
 				.form-enter-link:hover {
@@ -313,6 +312,7 @@ h5 {
 				vertical-align: top;
 				position: relative;
 				font-size: 14px;
+				margin-left: 10px;
 			}	
 			
 				.basket-link {
@@ -405,6 +405,14 @@ h5 {
 			position: relative;
 			top: 20px;
 		}
+		
+			.header-contacts-time {
+				font-size: 14px;
+			}
+			
+			.header-contacts-phone {
+				font-size: 22px;
+			}
 
 	.main-content {
 	}	
@@ -590,7 +598,7 @@ h5 {
 			background: #849d8f;
 			margin-bottom: 40px;
 			font-size: 0;
-		} 	
+		}
 		
 			.select-ice > div{
 				display: inline-block;
@@ -617,6 +625,7 @@ h5 {
 				.fatness-radio {
 					width: 410px;
 					margin: 0;
+					padding: 0;
 				}
 				
 					.fatness-radio li {
@@ -624,6 +633,42 @@ h5 {
 						vertical-align: top;
 						height: 36px;
 						list-style: none;
+						cursor: pointer;
+					}
+					
+					.fatness-radio-btn + label {
+						cursor: pointer;
+					}
+					
+					.fatness-radio-btn{
+						position: absolute;
+						display: none;
+					}
+					
+					.fatness-radio-btn + label {
+						position: relative;
+						padding: 0 0 0 30px;
+					}
+					
+					.fatness-radio-btn + label:before {
+						content: "";
+						position: absolute;
+						left: 0px;
+						width: 20px;
+						height: 20px;
+						border: 1px solid #fff;
+						border-radius: 100%;
+					}
+					
+					.fatness-radio-btn:checked + label:after{
+						content: "";
+						position: absolute;
+						left: 5px;
+						top: 4px;
+						border-radius: 100%;
+						width: 12px;
+						height: 12px;
+						background: #fff;
 					}
 			
 			.fillers {
@@ -644,6 +689,7 @@ h5 {
 						vertical-align: top;
 						font-size: 16px;
 					}
+					
 			
 			.select-ice-submit {
 				font-size: 16px;
@@ -715,6 +761,7 @@ h5 {
 					position: absolute;
 					top: 0;
 					left: 0;
+					font-size: 0;
 				}
 				
 				.item-quick-review {
