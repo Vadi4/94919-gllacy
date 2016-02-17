@@ -576,11 +576,11 @@ h5 {
 
 .site-wrapper:before,
 .site-wrapper:after {
-    background-image: url("slide-1.png");
+    background-image: url("../img/slide-1.png");
 }
 
 .site-wrapper:after {
-    background-image: url("slide-2.png");
+    background-image: url("../img/slide-2.png");
 }
 
 		.offers {
@@ -1295,7 +1295,7 @@ h5 {
 			border-radius: 18px;
 		}
 		
-		.feedbackg-form-button-close {
+		.feedback-form-button-close {
 			width: 18px;
 			height: 16px;
 			position: absolute;
@@ -1303,10 +1303,32 @@ h5 {
 			right: 15px;
 			border: none;
 		}
+		
+		.feedback-form-show {
+			display: block;
+			animation: bounce 0.6s;
+		}
+		
+@keyframes bounce {
+	0% {
+	transform: translateY(-2000px);
+	}
+	70%  {
+	transform: translateY(30px);
+	}
+	90%  {
+	transform: translateY(-10px);
+	}
+	100% {
+	transform: translateY(0);
+	}
+}
 
 .clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
-}	
+}
+
+	
 
