@@ -33,7 +33,7 @@ h5 {
 	font-size:16px;
 }
 
-*{
+{
 	outline: 1px solid red;
 }
 
@@ -109,6 +109,7 @@ h5 {
 					vertical-align: top;
 					font-size: 16px;
 					border-radius: 13px;
+					padding-bottom: 5px;
 				}
 					
 					.nav-list-item > a {
@@ -188,7 +189,7 @@ h5 {
 						position: relative;
 					}
 					
-					.nav-list-item-covert:hover .nav-list-inner{
+					.nav-list-item-covert:hover .nav-list-inner {
 						display: block;
 					}	
 				
@@ -240,10 +241,14 @@ h5 {
 					.form-search-input {
 						width: 218px;
 						height: 37px;
-						margin: 15px 16px;
+						margin: 15px 15px;
 						padding: 0 11px;
 						border: 1px solid #d3d3d2;
 						border-radius: 3px;
+					}
+					
+					.form-search-input:hover {
+						border: 1px solid #d3d3d2;
 					}
 				
 			.form-enter {
@@ -265,6 +270,7 @@ h5 {
 					border-radius: 12px;
 					height: 32px;
 					line-height: 32px;
+					border: none;
 				}
 				
 				.form-enter:hover .form-enter-link{
@@ -308,6 +314,19 @@ h5 {
 						float: right;
 						font-size: 13px;
 					}
+					
+					.form-enter-covert-links > a {
+						color: #333;
+					}
+					
+					.form-enter-covert-links > a:hover {
+						color: #ec593c;
+					}
+					
+					.form-enter-covert-links > a:active {
+						color: #ec593c;
+					}
+					
 				
 				.form-enter:hover .form-enter-covert {
 					display: block;
@@ -366,6 +385,10 @@ h5 {
 							border: none;
 							background: url("../img/cross.svg") no-repeat center;
 						}
+						
+					.basket-table-total {
+						border-top: 1px solid #cacac7;
+					}
 					
 					.table-cell-ice {
 						width: 50px;
@@ -384,7 +407,7 @@ h5 {
 						width: 96px;
 					}
 						.basket-table-price {
-							font-weight: 200;
+							font-weight: 300;
 						}
 					
 				.basket-table-total,
@@ -606,8 +629,17 @@ h5 {
 					margin-right: 22px;
 				}
 				
+				.breadcrumbs-page:not(:last-child) a:hover {
+					color: #ec593c;
+				}
+				
+				.breadcrumbs-page:not(:last-child) a:active {
+					color: #ec593c;
+				}
+				
 				.breadcrumbs-page:last-child a {
 					text-decoration: none;
+					cursor: default;
 				}
 				
 			.breadcrumbs-page:not(:last-child):after {
@@ -634,15 +666,24 @@ h5 {
 				.sort-list {
 					width: 192px;
 					height: 36px;
+					padding-left: 16px;
+					border: none;
 					border-radius: 14px;
-					color: #353535;
+					color: #fff;
 					margin-right: 15px;
+					background: rgba(255, 255, 255, 0.5);
+				}
+				
+				.sort-list:hover {
+					background: #fff;
+					color: #343434;
 				}
 				
 			.price-range {
 				width: 218px;
 				height: 36px;
 				margin-right: 15px;
+				background: #fff;
 			}
 
 			.fatness {
@@ -650,9 +691,12 @@ h5 {
 			}
 			
 				.fatness-radio {
-					width: 410px;
+					width: 375px;
 					margin: 0;
 					padding: 0;
+					background: rgba(255, 255, 255, 0.5);
+					border-radius: 14px;
+					padding: 0 15px;
 				}
 				
 					.fatness-radio li {
@@ -660,11 +704,11 @@ h5 {
 						vertical-align: top;
 						height: 36px;
 						list-style: none;
-						cursor: pointer;
 						margin-right: 20px;
+						line-height: 36px;
 					}
 					
-					.fatnes-radio li:last-child {
+					.fatness-radio li:last-child {
 						margin-right: 0;
 					}
 					
@@ -685,7 +729,8 @@ h5 {
 					.fatness-radio-btn + label:before {
 						content: "";
 						position: absolute;
-						left: 0px;
+						left: 0;
+						top: -2px;
 						width: 21px;
 						height: 21px;
 						background: url("../img/radio-btn-1.svg") no-repeat;
@@ -705,15 +750,18 @@ h5 {
 					}
 			
 			.fillers {
-				width: 702px;
+				width: 696px;
 			}
 				
 				.fillers-checkbox {
 					padding: 0;
 					margin: 0;
+					background: rgba(255, 255, 255, 0.5);
+					border-radius: 14px;
+					padding-left: 16px;
 				}
 			
-					.fillers-checkbox li{
+					.fillers-checkbox li {
 						list-style: none;
 						padding: 0;
 						margin: 0;
@@ -721,13 +769,52 @@ h5 {
 						display: inline-block;
 						vertical-align: top;
 						font-size: 16px;
+						margin-right: 20px;
+						line-height: 36px;
 					}
 					
+					.fillers-checkbox li:last-child { 
+						margin-right: 0;
+					}
+					
+						.fillers-checkbox-btn {
+							position: absolute;
+							display: none;
+						}
+						
+						.fillers-checkbox-btn + label {
+							position: relative;
+							padding: 0 0 0 30px;
+							cursor: pointer;
+						}
+					
+						.fillers-checkbox-btn + label:before {
+							content: "";
+							position: absolute;
+							left: 0px;
+							top: -1px;
+							width: 20px;
+							height: 20px;
+							background: url("../img/check-box.svg") no-repeat;
+							border-radius: 3px;
+							opacity: 0.85;
+						}
+						
+						.fillers-checkbox-btn:checked + label:before {
+							content: "";
+							position: absolute;
+							left: 0px;
+							width: 20px;
+							height: 20px;
+							background: url("../img/check-box-checked.svg") no-repeat;
+							border-radius: 3px;
+							opacity: 0.85;
+						}
 			
 			.select-ice-submit {
 				font-size: 16px;
 				height: 32px;
-				margin-top: 15px;
+				margin-top: 25px;
 				float: right;
 				background: rgba(255, 255, 255, 0.2);
 				border: 2px solid #fff;
@@ -750,7 +837,7 @@ h5 {
 			font-size: 0px;
 			list-style: none;
 			padding: 0;
-			margin-bottom: 40px;
+			margin-bottom: 45px;
 		}
 		
 			.item {
@@ -764,13 +851,36 @@ h5 {
 				min-height: 315px;
 			}
 			
-			.item:hover {
+			.item:after {
+				content: "";
+				position: absolute;
+				top: -10px;
+				left: -10px;
+				width: 200px;
+				height: 315px;
+				padding: 10px 10px 41px 10px;
 				background: rgba(255, 255, 255, 0.5);
+				display: none;
 				border-radius: 3px;
+			}
+			
+			.item:hover:after {
+				display: block;
+				z-index: 15;
 			}
 			
 			.item:hover .item-quick-review {
 				display: block;
+				z-index: 25;
+			}
+			
+			.item:hover .item-image {
+				position: relative;
+				z-index: 25;
+			}
+			
+			.item:hover .item-label {
+				z-index: 25;
 			}
 				
 				.item-price {
@@ -801,13 +911,13 @@ h5 {
 				.item-quick-review {
 					position: absolute;
 					font-size: 15px;
-					line-height: 25px;
-					margin-left: 10px;
+					margin-left: 15px;
 					border-radius: 12px;
 					padding: 0 17px;
-					bottom: 10px;
+					bottom: -21px;
 					text-align: center;
-					height: 25px;
+					height: 35px;
+					line-height: 35px;
 					display: none;
 				}
 				
@@ -815,11 +925,7 @@ h5 {
 					width: 60px;
 					height: 60px;
 					background: url("../img/hit.png");
-				}
-				
-		.pagination {
-			float: right;
-		}		
+				}		
 			
 		.features {
 			margin-bottom: 40px;
@@ -838,7 +944,7 @@ h5 {
 			}	
 			
 				.features-table-cell {
-					width: 343px;
+					width: 344px;
 					padding-left: 75px;
 					vertical-align: top;
 					padding-bottom: 30px;
@@ -926,6 +1032,8 @@ h5 {
 							height: 42px;
 							margin-left: 27px;
 							margin-right: 12px;
+							border: 1px solid #d3d3d2;
+							border-radius: 3px;
 							padding: 0 10px;
 						}
 						
@@ -977,6 +1085,8 @@ h5 {
 		
 			.pagination {
 				font-size: 0;
+				margin-bottom: 30px;
+				float: right;
 			}
 			
 				.pagination a{
@@ -985,22 +1095,41 @@ h5 {
 					width: 16px;
 					height: 16px;
 					font-size: 16px;
+					line-height: 16px;
 					text-decoration: none;
 					color: #fff;
 					text-align: center;
 					margin-left: 5px;
+					padding: 2px;
 				}
 				
-				a.pagination-current {
+				.pagination a:hover {
+					background: rgba(255, 255, 255, 0.5);
+					border-radius: 100%;
+				}
+				
+				.pagination  a.pagination-current {
 					color: #353535;
 					background: #fff;
 					border-radius: 100%;
 					padding: 2px;
-				}	
+				}
+
+				.pagination .page-previous:hover,
+				.pagination .page-next:hover {
+					background: none;
+				}
+				
 		.map {
 			height: 430px;
 			background: #f0ead4 url("../img/map.jpg") no-repeat 50%;
-		}		
+		}
+			
+			.map-pointer {
+				position: absolute;
+				left: 115px;
+				bottom: -275px;
+			}
 	
 	.main-footer {
 	}
@@ -1050,18 +1179,30 @@ h5 {
 		
 		.footer-info {
 			float: left;
-			width: 440px;
+			width: 420px;
 			padding: 20px 0;
 			font-size: 0;
+			margin-left: 30px;
 		}
 		
-			.footer-info a {   /* самому не нравиться как сделал пока что так оставил ) */
+			.footer-info-link {   
 				display: inline-block;
 				vertical-align: top;
+				min-width: 144px;
 				font-size: 13px;
-				color: white;
-				width: 220px;
 			}
+			
+				.footer-info-link a {
+					color: #fff;
+				}
+				
+				.footer-info-link a:hover {
+					color: #ec593c;
+				}
+				
+				.footer-info-link a:active {
+					color: #ec593c;
+				}
 		
 		.footer-copyright {
 			float: right;
@@ -1078,39 +1219,64 @@ h5 {
 			.footer-copyright-link {
 				color: #fff;
 			}
+			
+			.footer-copyright a:hover {
+				color: #ec593c;
+			}
+				
+			.footer-copyright a:active {
+				color: #ec593c;
+			}
 
 	.feedback-form {
 		width: 478px;
-		position: relative;
-		padding-top: 1px;
+		min-height: 443px;
 		display: none;
+		position: fixed;
+		background: #f8f7f4;
+		border-radius: 7px;
+		z-index: 30;
+		top: 20%;
+		left: 30%;
 	}
 	
-		.title-feedback-form{
+		.title-feedback-form {
 			font-size: 24px;
+			color: #343434;
 			font-weight: medium;
-			
 			margin: 20px 0 25px 25px;
 		}
 		
 		.feedback-form-input {
-			width: 265px;
-			margin-left: 14px;
-			margin-bottom: 20px;
-			padding: 12px 0 0 15px;
+			width: 250px;
+			margin: 0 0 20px 24px;
+			padding: 0 15px;
+			border-radius: 3px;
+			border: 1px solid #d3d3d2;
+			font-size: 16px;
+			font-weight: 400;
+			height: 42px;
+			line-height: 42px;
+			color: #333;
 		}
 		
 		.feedback-form-textarea {
-			width: 426px;
-			min-height: 153px;
-			margin-left: 14px;
-			margin-bottom: 96px; 
+			width: 388px;
+			min-height: 127px;
+			padding: 13px 20px;
+			margin: 0 0 96px 24px;
+			color: #333;
+			border-radius: 3px;
+			border: 1px solid #d3d3d2;
 		}
 		
 		.feedback-form-submit {
 			position: absolute;
 			bottom: 26px;
-			right: 24px;
+			right: 25px;
+			height: 44px;
+			padding: 0 26px;
+			border-radius: 18px;
 		}
 
 .clearfix::after {
