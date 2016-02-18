@@ -463,6 +463,7 @@ h5 {
 		.header-contacts {
 			float: right;
 			position: absolute;
+			text-align: right;
 			right: 20px;
 			top: 72px;
 		}
