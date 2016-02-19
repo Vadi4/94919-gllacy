@@ -1456,11 +1456,11 @@ h5 {
 			font-size: 24px;
 			color: #343434;
 			font-weight: medium;
-			margin: 20px 0 25px 25px;
+			margin: 20px 0 22px 25px;
 		}
 		
 		.feedback-form-input {
-			width: 250px;
+			width: 236px;
 			margin: 0 0 20px 24px;
 			padding: 0 15px;
 			border-radius: 3px;
@@ -1472,11 +1472,16 @@ h5 {
 			color: #333;
 		}
 		
+		.feedback-form-email {
+			padding-left: 20px;
+			width: 231px;
+		}
+		
 		.feedback-form-textarea {
-			width: 388px;
-			min-height: 127px;
-			padding: 13px 20px;
-			margin: 0 0 96px 24px;
+			width: 386px;
+			min-height: 133px;
+			padding: 9px 20px;
+			margin: 0 0 90px 24px;
 			color: #333;
 			border-radius: 3px;
 			border: 1px solid #d3d3d2;
@@ -1484,8 +1489,10 @@ h5 {
 		
 		.feedback-form-submit {
 			position: absolute;
-			bottom: 26px;
+			bottom: 27px;
 			right: 25px;
+			font-size: 17px;
+			font-weight: bold;
 			height: 44px;
 			padding: 0 26px;
 			border-radius: 18px;
@@ -1498,6 +1505,7 @@ h5 {
 			top: 15px;
 			right: 15px;
 			border: none;
+			background: url("../img/cross-x.svg") no-repeat 50%;
 		}
 		
 		.feedback-form-show {
