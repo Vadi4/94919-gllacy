@@ -123,8 +123,17 @@
 						</select>
 					</div>
 					<div class="price">
-						<div class="price-title">Цена: 100 руб. &ndash; 500 руб.</div>
-						<input class="price-range" type="range" min="100" max="500" step="10">
+						<div class="price-title">
+							<label class="min-price">Цена: <input name="min-price" type="text" value="100">руб.</label>
+							<label class="max-price">&ndash; <input name="max-price" type="text" value="500">руб.</label>	
+						</div>
+						<div class="price-range">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>
+						</div>
 					</div>
 					<div class="fatness">
 						<div class="title-fatness">Жирность:</div>
@@ -294,7 +303,7 @@
 				<div class="footer-info">
 					<div class="footer-heart"></div> 
 					<ul class="footer-info-list">
-						<li class="footer-info-link">
+						<li class="footer-info-link footer-info-heart">
 							<a href="#">Для поставщиков</a>
 						</li>
 						<li class="footer-info-link">	
