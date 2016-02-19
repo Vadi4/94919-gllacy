@@ -80,7 +80,7 @@ h5 {
 	.main-header {
 		color: #fff;
 		background: #849d8fl;
-		height: 95px;
+		height: 96px;
 	}
 
 		.header-logo {
@@ -120,6 +120,8 @@ h5 {
 						line-height: 32px;
 						font-weight: bold;
 						border-radius: 13px;
+						text-decoration: none;
+						text-shadow: ;
 					}
 					
 					.nav-list-item > a:hover {
@@ -213,7 +215,7 @@ h5 {
 					font-size: 0;
 					height: 33px;
 					width: 33px;
-					background: rgba(255, 255, 255, 0.5) url("../img/loupe.svg") no-repeat 50% 50%;
+					background: rgba(255, 255, 255, 0.2) url("../img/loupe.svg") no-repeat 50% 50%;
 					border-radius: 100%;
 					border: none;
 				}
@@ -266,7 +268,7 @@ h5 {
 					text-decoration: none;
 					color: #fff;
 					padding: 0 15px 0 44px;
-					background: rgba(255, 255, 255, 0.5) url("../img/enter.svg") no-repeat 20% 50%;
+					background: rgba(255, 255, 255, 0.2) url("../img/enter.svg") no-repeat 23% 50%;
 					border-radius: 12px;
 					height: 32px;
 					line-height: 32px;
@@ -275,7 +277,7 @@ h5 {
 				
 				.form-enter:hover .form-enter-link {
 					background: #f8f7f4 url("../img/enter-hover.svg") no-repeat 20% 50%;
-					border-radius: 12px;
+					border-radius: 13px;
 					color: #323232;
 				}
 				
@@ -349,13 +351,13 @@ h5 {
 					line-height: 32px;
 					text-decoration: none;
 					color: #fff;
-					background: rgba(255, 255, 255, 0.5) url("../img/basket.svg") no-repeat 20% 50%;
-					border-radius: 12px;
+					background: rgba(255, 255, 255, 0.2) url("../img/basket.svg") no-repeat 18% 50%;
+					border-radius: 13px;
 				}
 				
 				.basket-link-full {
 					display: none;
-					background: rgba(255, 255, 255, 0.5) url("../img/basket-full.svg") no-repeat 20% 50%;
+					background: rgba(255, 255, 255, 0.2) url("../img/basket-full.svg") no-repeat 18% 50%;
 				}
 				
 					.basket-link-sum-items {
@@ -363,13 +365,13 @@ h5 {
 					}
 				
 				.basket:hover .basket-link {
-					background: #f8f7f4 url("../img/basket-hover.svg") no-repeat 20% 50%;
+					background: #f8f7f4 url("../img/basket-hover.svg") no-repeat 18% 50%;
 					border-radius: 12px;
 					color: #323232;
 				}
 				
 				.basket:hover .basket-link-full {
-					background: #f8f7f4 url("../img/basket-hover-full.svg") no-repeat 20% 50%;
+					background: #f8f7f4 url("../img/basket-hover-full.svg") no-repeat 18% 50%;
 					border-radius: 12px;
 					color: #323232;
 				}
@@ -470,10 +472,13 @@ h5 {
 		
 			.header-contacts-time {
 				font-size: 14px;
+				font-weight: bold;
 			}
 			
 			.header-contacts-phone {
 				font-size: 22px;
+				font-weight: bold;
+				letter-spacing: 0.005in;
 			}
 
 	.main-content {
@@ -641,8 +646,9 @@ h5 {
 			}
 			
 				.breadcrumbs-page a {
+					text-decoration: none;
 					color: #fff;
-					margin-right: 22px;
+					margin-right: 21px;
 				}
 				
 				.breadcrumbs-page:not(:last-child) a:hover {
@@ -659,15 +665,19 @@ h5 {
 				}
 				
 			.breadcrumbs-page:not(:last-child):after {
-				content: "»"; /* не разобрался пока как вставить спецсимвол*/
+				content: "»"; /* не разобрался пока как вставить спецсимвол(точнее он не сработал)*/
 				position: absolute;
 				top: 0;
 				right: 8px;
 			}
 			
+			.g-title-h1 {
+				margin: 10px 0 35px 0;
+			}
+			
 		.select-ice {
 			background: #849d8f;
-			margin-bottom: 40px;
+			margin-bottom: 38px;
 			font-size: 0;
 		}
 		
@@ -682,47 +692,71 @@ h5 {
 				.sort-list {
 					width: 192px;
 					height: 36px;
-					padding-left: 16px;
+					padding-left: 13px;
 					border: none;
+					font-size: 16px;
 					border-radius: 14px;
 					color: #fff;
 					margin-right: 15px;
+					margin-top: 1px;
 					background: rgba(255, 255, 255, 0.2);
 				}
+				
+					.sort-list option{
+						font-size: 14px;
+						font-weight: 400;
+					}
 				
 				.sort-list:hover {
 					background: #fff;
 					color: #343434;
 				}
 				
+				.title-sort {
+					margin-left: 18px;
+				}
+				
 			.price-range {
-				width: 218px;
+				width: 188px;
 				height: 36px;
 				margin-right: 15px;
+				padding: 0 15px;
+				margin-top: 1px;
 				background: #fff;
 				cursor: pointer;
+			}
+			
+			.price-title {
+				margin-left: 18px;
 			}
 
 			.fatness {
 				font-size: 0;
 			}
 			
+				.title-fatness {
+					margin-left: 19px;
+				}
+			
 				.fatness-radio {
-					width: 375px;
+					width: 385px;
 					margin: 0;
 					padding: 0;
 					background: rgba(255, 255, 255, 0.2);
 					border-radius: 14px;
-					padding: 0 15px;
+					height: 36px;
+					padding-left: 15px;
+					padding-right: 15px;
+					margin-top: 1px;
+					margin-left: 4px;
 				}
 				
 					.fatness-radio li {
 						display: inline-block;
 						vertical-align: top;
-						height: 36px;
+						margin-top: 9px;
 						list-style: none;
-						margin-right: 20px;
-						line-height: 36px;
+						margin-right: 17px;
 					}
 					
 					.fatness-radio li:last-child {
@@ -731,6 +765,8 @@ h5 {
 					
 					.fatness-radio-btn + label {
 						cursor: pointer;
+						font-size: 16px;
+						font-weight: medium;
 					}
 					
 					.fatness-radio-btn {
@@ -765,17 +801,18 @@ h5 {
 						background: url("../img/radio-btn.svg") no-repeat;
 						opacity: 0.85;
 					}
-			
-			.fillers {
-				width: 696px;
-			}
 				
 				.fillers-checkbox {
 					padding: 0;
 					margin: 0;
 					background: rgba(255, 255, 255, 0.2);
 					border-radius: 14px;
-					padding-left: 16px;
+					padding: 0 9px 0 16px;
+					margin-top: 5px;
+				}
+				
+				.fillers-title {
+					margin: 6px 0 0 17px;
 				}
 			
 					.fillers-checkbox li {
@@ -786,12 +823,13 @@ h5 {
 						display: inline-block;
 						vertical-align: top;
 						font-size: 16px;
-						margin-right: 20px;
+						margin-right: 19px;
 						line-height: 36px;
 					}
 					
 					.fillers-checkbox li:last-child { 
 						margin-right: 0;
+						padding-right: 10px;
 					}
 					
 						.fillers-checkbox-btn {
@@ -801,8 +839,10 @@ h5 {
 						
 						.fillers-checkbox-btn + label {
 							position: relative;
-							padding: 0 0 0 30px;
+							padding: 0 0 0 32px;
 							cursor: pointer;
+							font-size: 16px;
+							font-weight: medium;
 						}
 					
 						.fillers-checkbox-btn + label:before {
@@ -830,13 +870,14 @@ h5 {
 			
 			.select-ice-submit {
 				font-size: 16px;
-				height: 32px;
-				margin-top: 25px;
+				height: 36px;
+				line-height: 32px;
+				margin-top: 32px;
 				float: right;
 				background: rgba(255, 255, 255, 0.2);
 				border: 2px solid #fff;
-				border-radius: 13px;
-				padding: 0 30px;
+				border-radius: 14px;
+				padding: 0 25px;
 			}
 			
 			.select-ice-submit:hover {
@@ -865,7 +906,7 @@ h5 {
 				width: 200px;
 				margin-right: 20px;
 				font-size: 16px;
-				min-height: 315px;
+				min-height: 316px;
 			}
 			
 			.item:after {
@@ -902,9 +943,15 @@ h5 {
 				
 				.item-price {
 					position: absolute;
-					left: 0px;
-					top: 145px;
+					font-size: 45px;
+					font-weight: 500;
+					left: 1px;
+					top: 149px;
 				}
+					
+					.item-size {
+						font-size: 30px;
+					}
 			
 				.item:nth-child(4n) {
 					margin-right: 0px;
@@ -913,9 +960,12 @@ h5 {
 				.item-caption {
 					color: white;
 					font-size: 16px;
+					line-height: 22px;
+					text-decoration: none;
+					font-weight: medium;
 					display: block;
 					text-align: center;
-					margin: 0 9px;
+					margin: 5px 6px;
 				}
 				
 				.item-label {
@@ -1102,7 +1152,8 @@ h5 {
 		
 			.pagination {
 				font-size: 0;
-				margin-bottom: 30px;
+				margin-bottom: 29px;
+				margin-right: -6px;
 				float: right;
 			}
 			
@@ -1117,7 +1168,7 @@ h5 {
 					color: #fff;
 					text-align: center;
 					margin-left: 5px;
-					padding: 2px;
+					padding: 4px;
 				}
 				
 				.pagination a:hover {
@@ -1129,7 +1180,7 @@ h5 {
 					color: #353535;
 					background: #fff;
 					border-radius: 100%;
-					padding: 2px;
+					padding: 4px;
 				}
 
 				.pagination .page-previous:hover,
@@ -1147,6 +1198,10 @@ h5 {
 				left: 115px;
 				bottom: -275px;
 			}
+			
+		.main-content > .container {
+			border-bottom: 2px solid #a9bbb1;
+		}			
 	
 	.main-footer {
 	}
@@ -1164,9 +1219,9 @@ h5 {
 				text-decoration: none;
 				width: 31px;
 				height: 31px;
-				margin-right: 12px;
+				margin-right: 13px;
 				border-radius: 100%;
-				border: 2px solid #c2cec7;
+				border: 3px solid #c2cec7;
 				opacity: 0.7;
 			}
 			
@@ -1197,20 +1252,21 @@ h5 {
 		.footer-info {
 			float: left;
 			width: 420px;
-			padding: 20px 0;
+			padding: 14px 0;
 			font-size: 0;
-			margin-left: 30px;
+			margin-left: 40px;
 		}
 		
 			.footer-info-link {   
 				display: inline-block;
 				vertical-align: top;
-				min-width: 144px;
+				min-width: 143px;
 				font-size: 13px;
 			}
 			
 				.footer-info-link a {
 					color: #fff;
+					text-decoration: none;
 				}
 				
 				.footer-info-link a:hover {
@@ -1223,14 +1279,17 @@ h5 {
 		
 		.footer-copyright {
 			float: right;
-			width: 200px;
-			padding: 20px 0;
+			width: 188px;
+			padding: 19px 0;
 		}	
 		
 			.footer-copyright p {
 				padding: 0;
 				margin: 0;
+				margin-top: -3px;
+				margin-right: 1px;
 				font-size: 12px;
+				float: right;
 			}
 			
 			.footer-copyright-link {
