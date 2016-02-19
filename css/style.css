@@ -380,25 +380,25 @@ h5 {
 				}
 				
 				.basket-table-container {
-					padding: 0 16px;
+					padding: 34px 16px 18px 16px;
 					display: none;
 					border-radius: 3px;
 				}				
 				
 					.basket-table {
 						width: 508px;
-						min-height: 240px;
 						color: #333333;
-						vertical-align: middle;
+						line-height: 17px;
 					}
 					
 						.basket-table-item td {
-							height: 70px;
 							text-align: center;
+							vertical-align: top;
+							height: 53px;
 						}
 						
 						.table-cell-close {
-							width: 32px;
+							width: 18px;
 						}
 						
 							.basket-table-button {
@@ -413,26 +413,34 @@ h5 {
 						}
 						
 						.table-cell-ice {
-							width: 50px;
+							width: 58px;
 						}
+							.basket-table-img {
+								margin-top: -7px;
+							}
 						
 						.basket-table-item .table-cell-caption {
 							text-align: left;
 						}
 						
 						.table-cell-caption {
-							width: 238px;
+							width: 240px;
+							font-size: 13px;
 						}
 						
 						.table-cell-weight {
-							width: 125px;
+							width: 155px;
+							font-weight: 400;
 						}
 						
-						.table-cell-cost {
-							width: 96px;
+						.basket-table-item .table-cell-cost {
+							width: 66px;
+							font-size: 13;
+							font-weight: 400;
+							text-align: left;
 						}
 							.basket-table-price {
-								font-weight: 300;
+								color: #808080;
 							}
 						
 					.basket-table-total,
@@ -446,17 +454,21 @@ h5 {
 					}
 					
 					.basket-table-order {
-						height: 62px;
+						height: 42px;
 					}
 					
 						.basket-table-total-cost {
-							margin-right: 25px;
+							margin-right: 12px;
+							font-size: 15px;
+							font-weight: bold;
 						}
 						
 						.basket-table-link-order {
-							margin-right: 15px;
+							margin-right: -4px;
 							padding: 0 22px;
 							height: 35px;
+							font-size: 15px;
+							font-weight: bold;
 							border-radius: 14px;
 							line-height: 35px;
 						}
@@ -496,7 +508,7 @@ h5 {
 	
 		.slider {
 			position: relative;
-			padding-top: 270px;
+			padding-top: 295px;
 			text-align: center;
 			color: #fff;
 			margin-bottom: 40px;
@@ -516,7 +528,7 @@ h5 {
 			
 			.slider-controls {
 				position: absolute;
-				bottom: 25px;
+				bottom: 21px;
 				left: 0;
 				z-index: 20;
 				font-size: 0;
@@ -622,6 +634,8 @@ h5 {
 					}
 					
 					.offer-text {
+						font-size: 18px;
+						font-weight: bold;
 						margin: 0 20px;
 					}
 				
@@ -638,8 +652,17 @@ h5 {
 						height: 46px;
 						font-size: 18px;
 						line-height: 46px;
-						right: 20px;
-						bottom: 22px;
+						right: 22px;
+						bottom: 23px;
+					}
+					
+					.offer-chocolate .offer-button {
+						bottom: 30px;
+						margin-right: -4px;
+					}
+					
+					.offer-chocolate .offer-text {
+						margin-top: -1px;
 					}
 				
 		.breadcrumbs {
@@ -710,6 +733,9 @@ h5 {
 					margin-right: 17px;
 					margin-top: 1px;
 					background: rgba(255, 255, 255, 0.2);
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					appearance: none;
 				}
 				
 					.sort-list option{
@@ -1056,28 +1082,41 @@ h5 {
 				}		
 			
 		.features {
+			margin-top: -46px;
 			margin-bottom: 40px;
 			background: #ece0c7;
+			padding-bottom: 5px;
 			background-image: url("../img/pattern_waffle.jpg"); 
 			border-radius: 12px;
 			color: #323232;
 		}	
 				
 			.features-title-h4 {
-				margin: 0 20px 35px 20px;
-				padding-top: 27px;
+				margin: 0 20px 27px 20px;
+				padding-top: 21px;
+				font-size: 24px;
+				line-height: 30px;
 			}	
 
 			.features-table {
+				font-size: 16px;
+				line-height: 22px;
+				color: #323232;
+				font-weight: 500;
 			}	
 			
 				.features-table-cell {
-					width: 344px;
-					padding-left: 75px;
+					width: 347px;
+					padding-left: 78px;
 					vertical-align: top;
-					padding-bottom: 30px;
+					padding-bottom: 20px;
 					position: relative;
 				}
+				
+					.features-table-cell-left {
+						padding-left: 73px;
+						width: 345px;
+					}
 				
 				.features-table-ice,
 				.features-table-cow,
@@ -1093,22 +1132,30 @@ h5 {
 				
 				.features-table-ice {
 					background: url("../img/features-ico-ice.svg");
+					top: -13px;
+					left: 21px;
 				}
 				
 				.features-table-cow {
 					background: url("../img/features-ico-cow.svg");
+					top: -13px;
+					left: 16px;
 				}
 				
 				.features-table-leaf {
 					background: url("../img/features-ico-leaf.svg");
+					top: -10px;
+					left: 22px;
 				}
 				
 				.features-table-temp {
 					background: url("../img/features-ico-temp.svg");
+					top: -9px;
+					left: 16px;
 				}
 					
 		.news-mailing {
-			margin-bottom: 40px;
+			margin-bottom: 38px;
 			color: #353535;
 		}
 			.news-mailing article {
@@ -1123,7 +1170,7 @@ h5 {
 				}
 				
 					.g-title-h5 {
-						margin: 20px 0 14px 25px;
+						margin: 24px 0 3px 20px;
 						color: #5a5a5a;
 						font-size: 16px;
 					}
@@ -1132,9 +1179,10 @@ h5 {
 						display: inline-block;
 						vertical-align: top;
 						color: #353535;
-						margin-left: 25px;
+						margin-left: 22px;
 						font-size: 24px;
-						line-height: 31px;
+						font-weight: bold;
+						line-height: 29px;
 						max-width: 290px;
 					}
 					
@@ -1151,15 +1199,17 @@ h5 {
 				}
 				
 					.mailing-text {
-						margin: 38px 30px 20px 26px;
+						margin: 34px 30px 14px 27px;
 						font-size: 16px;
+						width: 380px;
+						line-height: 22px;
 					}
 					
 						.mailing-form-email {
 							width: 208px;
 							height: 42px;
 							margin-left: 27px;
-							margin-right: 12px;
+							margin-right: 7px;
 							border: 1px solid #d3d3d2;
 							border-radius: 3px;
 							padding: 0 10px;
@@ -1176,12 +1226,13 @@ h5 {
 		.contacts {
 			position: absolute;
 			right: 20px;
-			bottom: -373px;
+			bottom: -376px;
 			border-radius: 12px;
 			width: 302px;
 			min-height: 305px;
 			color: #343434;
 			background: #fefefe;
+			z-index: 25;
 		}
 			.contacts p {
 				margin-left: 26px;
@@ -1189,17 +1240,21 @@ h5 {
 			}
 			
 			.contacts-address {
-				margin-top: 33px;
+				margin-top: 26px;
+				font-size: 14px;
+				line-height: 20px;
 			}
 				
 					.contacts-address-street,
 					.contacts-phone-number {
 						font-size: 18px;
+						line-height: 24px;
 						font-weight: bold;
 					}
 				
 			.contacts-phone {
-				margin-bottom: 26px;
+				margin-bottom: 24px;
+				margin-top: 19px;
 			}
 			
 			.contacts-button {
@@ -1207,6 +1262,8 @@ h5 {
 				padding: 0 32px;
 				border-radius: 18px;
 				width: 186px;
+				font-size: 17px;
+				font-weight: bold;
 				height: 44px;
 				line-height: 44px;
 			}

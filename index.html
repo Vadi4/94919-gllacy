@@ -9,9 +9,9 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<input class="slider-radio-covert" type="radio" id="btn-1" name="toggle" checked>
-		<input class="slider-radio-covert" type="radio" id="btn-2" name="toggle">
-		<input class="slider-radio-covert" type="radio" id="btn-3" name="toggle">
+	<input class="slider-radio-covert" type="radio" id="btn-1" name="toggle" checked>
+	<input class="slider-radio-covert" type="radio" id="btn-2" name="toggle">
+	<input class="slider-radio-covert" type="radio" id="btn-3" name="toggle">
 		<div class="site-wrapper">
 			<header class="main-header">
 				<div class="container clearfix">
@@ -81,10 +81,10 @@
 									</tr>
 									<tr class="basket-table-item">
 										<td><button class="basket-table-button" type="button"></button></td>
-										<td><img src="img/butter-strawberry-ice.png" width="33" height="33" alt=""></td>
+										<td><img class="basket-table-img" src="img/butter-strawberry-ice.png" width="33" height="33" alt=""></td>
 										<td class="table-cell-caption"><span>Клубничный пломбир с присыпкой из белого шоколада</span></td>
 										<td><span>1,5кг </span>&times;<span class="basket-table-price"> 300руб</span></td>
-										<td><span>450руб</span></td>
+										<td class="table-cell-cost"><span>450руб</span></td>
 									</tr>
 									<tr class="basket-table-total">
 										<td colspan="3"></td>
@@ -108,8 +108,7 @@
 				<div class="container clearfix">
 					<div class="slider">
 						<div class="slide" id="slide-1">
-							<div class="slide-title">Крем брюле и пломбир с 
-								малиновым джемом
+							<div class="slide-title">Крем-брюле и пломбир с малиновым джемом
 							</div>
 							<a class="slide-btn" href="#">Давайте оба!</a>
 						</div>
@@ -131,15 +130,15 @@
 							<label for="btn-3"></label>
 						</div>	
 					</div>
-						<section class="offers clearfix">
+					<section class="offers clearfix">
 						<article class="offer offer-raspberries">
 							<h3 class="g-title-h3">Малинка даром!</h3>
-							<p class="offer-text">При покупке 2кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+							<p class="offer-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
 							<a class="button offer-button" href="#">Хочу варенье!</a>
 						</article>
 						<article class="offer offer-chocolate">
 							<h3 class="g-title-h3">Шоколадки даром!</h3>
-							<p class="offer-text">При покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+							<p class="offer-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
 							<a class="button offer-button" href="#">Хочу шоколадки!</a>
 						</article>
 					</section>	
@@ -147,7 +146,7 @@
 						<li class="item">
 							<div class="item-image">	
 								<img src="img/butter-orange-ice.png" width="200" height="200" alt="">
-								<span class="item-price">310 Р/<span class="item-weight">кг</span></span>
+								<span class="item-price">310 Р<span class="item-size">/кг</span></span>
 							</div>	
 							<a class="item-caption" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 							<a class="item-quick-review button" href="#">Быстрый просмотр</a>
@@ -156,7 +155,7 @@
 						<li class="item">
 							<div class="item-image">
 								<img src="img/butter-coffe-ice.png" width="200" height="200" alt="">
-								<span class="item-price">380 Р/<span class="item-weight">кг</span></span>
+								<span class="item-price">380 Р<span class="item-size">/кг</span></span>
 							</div>	
 							<a class="item-caption" href="#">Сливочно-кофейное с кусочками шоколада</a>
 							<a class="item-quick-review button" href="#">Быстрый просмотр</a>
@@ -165,7 +164,7 @@
 						<li class="item">
 							<div class="item-image">
 								<img src="img/butter-strawberry-ice.png" width="200" height="200" alt="">
-								<span class="item-price">310 Р/<span class="item-weight">кг</span></span>
+								<span class="item-price">355 Р<span class="item-size">/кг</span></span>
 							</div>	
 							<a class="item-caption" href="#">Сливочно клубничное с присыпкой из белого шоколада</a>
 							<a class="item-quick-review button" href="#">Быстрый просмотр</a>
@@ -174,7 +173,7 @@
 						<li class="item">
 							<div class="item-image">
 								<img src="img/butter-cremebrulee-ice.png" width="200" height="200" alt="">
-								<span class="item-price">415 Р/<span class="item-weight">кг</span></span>
+								<span class="item-price">415 Р<span class="item-size">/кг</span></span>
 							</div>	
 							<a class="item-caption" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 							<a class="item-quick-review button" href="#">Быстрый просмотр</a>
@@ -182,24 +181,24 @@
 						</li>
 					</ul>	
 					<section class="features clearfix">
-						<h4 class="g-title-h4 features-title-h4">Магазин глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h4>
+						<h4 class="g-title-h4 features-title-h4">Магазин Глейси &nbsp;&mdash; это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h4>
 						<table class="features-table">
 							<tr class="features-table-row">
-								<td class="features-table-cell">Все наше мороженное 
+								<td class="features-table-cell">Все наше мороженое 
 								изготавливается на собственном производстве, с использованием современного 
 								оборудования и проверенных временем технологий<div class="features-table-ice"></div></td>
-								<td class="features-table-cell">Закупка ингридиентов
-								производится только у проверенных феремерских хозяйств и компаний, 
+								<td class="features-table-cell features-table-cell-left">Закупка ингредиентов
+								производится только у проверенных фермерских хозяйств и компаний, 
 								с которыми нас связывает долговременное сотрудничество.<div class="features-table-cow"></div></td>
 							</tr>
 							<tr class="features-table-row">
 								<td class="features-table-cell">Для приготовления 
-								мороженного используются настоящие сливки и молоко высочайшего качества. 
-								Все дополнительные ингридиенты и добавки произведены из натурального,
+								мороженого используются настоящие сливки и молоко высочайшего качества. 
+								Все дополнительные ингредиенты произведены из натурального,
 								экологически чистого сырья.<div class="features-table-leaf"></div></td>
-								<td class="features-table-cell">Доставка нашего 
-								мороженного до заказчиков осуществляется в специальном термопаке,
-								которая не дает мороженному	растаять в пути и позволяет ему
+								<td class="features-table-cell features-table-cell-left">Доставка нашего 
+								мороженого до заказчиков осуществляется в специальном термопаке,
+								которая не дает мороженому	растаять в пути и позволяет ему
 								сохранить свой превосходный	вкус.<div class="features-table-temp"></div></td>
 							</tr>
 						</table>
@@ -211,9 +210,11 @@
 							фруктовых щербетов <br>к столу</span></a>
 						</article>
 						<article class="mailing">
-							<p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-							всего самого вкусного, что у нас происходит. Обещаем не спамить
-							и не слать всякой не нужной ерунды. Честно =)
+							<p class="mailing-text">
+							Подпишитесь на нашу сладкую рассылку<br>
+							и будете всегда в курсе всего самого вкусного,
+							что у нас происходит. Обещаем не спамить и не
+							слать всякой не нужной ерунды. Честно =)
 							</p>
 							<form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
 								<input class="mailing-form-email" type="email" placeholder="Электронная почта">
