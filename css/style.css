@@ -1053,6 +1053,9 @@ h5 {
 					left: 1px;
 					top: 149px;
 				}
+					.item-price-sumbol{
+						margin-left: -5px;
+					}
 					
 					.item-size {
 						font-size: 30px;
