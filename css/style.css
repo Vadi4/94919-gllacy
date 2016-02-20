@@ -1049,7 +1049,7 @@ h5 {
 				.item-price {
 					position: absolute;
 					font-size: 45px;
-					font-weight: 500;
+					font-weight: bold;
 					left: 1px;
 					top: 149px;
 				}
