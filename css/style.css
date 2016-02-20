@@ -734,7 +734,7 @@ h5 {
 					color: #fff;
 					margin-right: 17px;
 					margin-top: 1px;
-					background: rgba(255, 255, 255, 0.2) url("../img/select-arrow.svg") no-repeat 90% 50%;
+					background: rgba(255, 255, 255, 0.2) url("../img/select-arrow.svg") no-repeat 93% 52%;
 					-webkit-appearance: none;
 					-moz-appearance: none;
 					appearance: none;
@@ -746,7 +746,7 @@ h5 {
 					}
 				
 				.sort-list:hover {
-					background: #fff url("../img/select-arrow-hover.svg") no-repeat 90% 50%;
+					background: #fff url("../img/select-arrow-hover.svg") no-repeat 93% 52%;
 					color: #343434;
 				}
 				
@@ -1306,6 +1306,15 @@ h5 {
 					text-align: center;
 					margin-left: 5px;
 					padding: 4px;
+				}
+				
+				.pagination .page-next {
+					margin-left: 10px;
+					padding-right: 0; 
+				}
+				
+				.pagination .page-previous {
+					margin-right: 4px;
 				}
 				
 				.pagination a:hover {
