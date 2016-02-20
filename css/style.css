@@ -130,7 +130,7 @@ h5 {
 					
 					.nav-list-item > a:active {
 						background: #ededed;
-						box-shadow: ; /* потом не забыть сделать тень )*/
+						box-shadow: inset 0 1px 2px 1px #6c6d6c;
 					}
 					
 					.nav-list-item-current > a {
@@ -1010,7 +1010,7 @@ h5 {
 			font-size: 0px;
 			list-style: none;
 			padding: 0;
-			margin-bottom: 42px;
+			margin-bottom: 44px;
 		}
 		
 			.item {
@@ -1090,7 +1090,7 @@ h5 {
 					display: block;
 					text-align: center;
 					margin: 5px 6px;
-					margin-bottom: 42px;
+					margin-bottom: 40px;
 				}
 				
 					.item-caption-underline {
@@ -1274,8 +1274,8 @@ h5 {
 			
 		.contacts {
 			position: absolute;
-			right: 20px;
-			bottom: -376px;
+			right: 200px;
+			top: 68px;
 			border-radius: 12px;
 			width: 302px;
 			min-height: 305px;
@@ -1321,6 +1321,7 @@ h5 {
 				font-size: 0;
 				margin-bottom: 29px;
 				margin-right: -6px;
+				margin-top: -2px;
 				float: right;
 			}
 			
@@ -1360,20 +1361,20 @@ h5 {
 				}
 
 				.pagination .page-next:hover {
-					background: url("../img/page-next.svg") no-repeat 50%;
+					background: url("../img/page-next.png") no-repeat 50%;
 				}
 				
 				.pagination .page-next {
-					background: url("../img/page-next.svg") no-repeat 50%;
+					background: url("../img/page-next.png") no-repeat 50%;
 				}
 				
 				.pagination .page-previous {
-					background: url("../img/page-next.svg") no-repeat 50%;
+					background: url("../img/page-next.png") no-repeat 50%;
 					-webkit-transform: rotate(180deg);
 				}
 				
 				.pagination .page-previous:hover {
-					background: url("../img/page-next.svg") no-repeat 50%;
+					background: url("../img/page-next.png") no-repeat 50%;
 					-webkit-transform: rotate(180deg);
 				}
 				
@@ -1388,6 +1389,7 @@ h5 {
 		.map {
 			height: 430px;
 			background: #f0ead4 url("../img/map.jpg") no-repeat 50%;
+			position: relative;
 		}
 			
 			.map-pointer {
@@ -1475,17 +1477,19 @@ h5 {
 					background: url("../img/heart.svg") no-repeat 50%;
 				}
 			
-				.footer-info-link a {
+				.footer-info-link a,
+				.footer-copyright-link {
 					color: #fff;
 					text-decoration: none;
+					box-shadow: inset 0 -1px 0 0 #abbcb3;
 				}
 				
-				.footer-info-link a:hover {
+				.footer-info-link a:hover,
+				.footer-info-link a:active,
+				.footer-copyright a:hover, 
+				.footer-copyright a:active {
 					color: #ec593c;
-				}
-				
-				.footer-info-link a:active {
-					color: #ec593c;
+					box-shadow: inset 0 -1px 0 0 #ec593c;
 				}
 		
 		.footer-copyright {
@@ -1501,19 +1505,6 @@ h5 {
 				margin-right: -2px;
 				font-size: 12px;
 				float: right;
-			}
-			
-			.footer-copyright-link {
-				text-decoration: none;
-				color: #fff;
-			}
-			
-			.footer-copyright a:hover {
-				color: #ec593c;
-			}
-				
-			.footer-copyright a:active {
-				color: #ec593c;
 			}
 
 	.feedback-form {
