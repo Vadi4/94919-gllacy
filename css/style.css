@@ -637,6 +637,7 @@ h5 {
 						font-size: 18px;
 						font-weight: bold;
 						margin: 0 20px;
+						margin-bottom: 85px;
 					}
 				
 				.offer-chocolate {
@@ -651,6 +652,7 @@ h5 {
 						border-radius: 18px;
 						height: 46px;
 						font-size: 18px;
+						font-weight: bold;
 						line-height: 46px;
 						right: 22px;
 						bottom: 23px;
@@ -732,7 +734,7 @@ h5 {
 					color: #fff;
 					margin-right: 17px;
 					margin-top: 1px;
-					background: rgba(255, 255, 255, 0.2);
+					background: rgba(255, 255, 255, 0.2) url("../img/select-arrow.svg") no-repeat 90% 50%;
 					-webkit-appearance: none;
 					-moz-appearance: none;
 					appearance: none;
@@ -744,7 +746,7 @@ h5 {
 					}
 				
 				.sort-list:hover {
-					background: #fff;
+					background: #fff url("../img/select-arrow-hover.svg") no-repeat 90% 50%;
 					color: #343434;
 				}
 				
@@ -789,12 +791,26 @@ h5 {
 						box-shadow: 0 2px 1px 0 #98a79e;
 					}
 					
+					.price-range .toggle:hover {
+						width: 22px;
+						height: 22px;
+						top: 7px;
+					}
+					
 					.price-range .toggle-min {
 						left: 34px;
 					}
 					
+					.price-range .toggle-min:hover {
+						left: 33px;
+					}
+					
 					.price-range .toggle-max {
 						left: 132px;
+					}
+					
+					.price-range .toggle-max:hover {
+						left: 131px;
 					}
 				
 			.price-title {
@@ -974,7 +990,9 @@ h5 {
 			
 			.select-ice-submit:active {
 				background: #eaeaea;
-				box-shadow:; /*потом доделать... */
+				color: #383939;
+				border: none;
+				box-shadow: inset 0 1px 2px 1px #6c6d6c;
 			}
 			
 			
@@ -982,7 +1000,7 @@ h5 {
 			font-size: 0px;
 			list-style: none;
 			padding: 0;
-			margin-bottom: 45px;
+			margin-bottom: 44px;
 		}
 		
 			.item {
@@ -1002,9 +1020,9 @@ h5 {
 				top: -10px;
 				left: -10px;
 				width: 200px;
-				height: 315px;
+				min-height: 315px;
 				padding: 10px 10px 41px 10px;
-				background: rgba(255, 255, 255, 0.5);
+				background: rgba(255, 255, 255, 0.3);
 				display: none;
 				border-radius: 3px;
 			}
@@ -1065,6 +1083,7 @@ h5 {
 				.item-quick-review {
 					position: absolute;
 					font-size: 15px;
+					font-weight: bold;
 					margin-left: 15px;
 					border-radius: 12px;
 					padding: 0 17px;
@@ -1188,7 +1207,7 @@ h5 {
 					
 						.blog-news-link-bg {
 							background-color: rgba(255, 255, 255, 0.7);
-							padding: 0 10px 2px 0; /* почему то паддинг в 1-ой строчке срправа не виден ...*/
+							padding: 0 10px 2px 0;
 						}
 				
 				.mailing {
@@ -1208,8 +1227,7 @@ h5 {
 						.mailing-form-email {
 							width: 208px;
 							height: 42px;
-							margin-left: 27px;
-							margin-right: 7px;
+							margin: 0 7px 25px 27px;
 							border: 1px solid #d3d3d2;
 							border-radius: 3px;
 							padding: 0 10px;
@@ -1218,6 +1236,7 @@ h5 {
 						.mailing-form-submit {
 							border-radius: 18px;
 							font-size: 17px;
+							font-weight: bold;
 							line-height: 44px;
 							padding: 0 22px;
 							height: 44px;
@@ -1305,8 +1324,26 @@ h5 {
 					background: url("../img/page-next.svg") no-repeat 50%;
 				}
 				
-				.page-next {
+				.pagination .page-next {
 					background: url("../img/page-next.svg") no-repeat 50%;
+				}
+				
+				.pagination .page-previous {
+					background: url("../img/page-next.svg") no-repeat 50%;
+					-webkit-transform: rotate(180deg);
+				}
+				
+				.pagination .page-previous:hover {
+					background: url("../img/page-next.svg") no-repeat 50%;
+					-webkit-transform: rotate(180deg);
+				}
+				
+				.inactive {
+					opacity: 0.5; 
+				}
+				
+				.inactive:hover {
+					cursor: default;
 				}
 				
 		.map {
@@ -1422,7 +1459,7 @@ h5 {
 				padding: 0;
 				margin: 0;
 				margin-top: -3px;
-				margin-right: 1px;
+				margin-right: -2px;
 				font-size: 12px;
 				float: right;
 			}
@@ -1485,6 +1522,7 @@ h5 {
 			color: #333;
 			border-radius: 3px;
 			border: 1px solid #d3d3d2;
+			resize: none;
 		}
 		
 		.feedback-form-submit {
