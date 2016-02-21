@@ -1001,6 +1001,16 @@ h5 {
 						.fillers-checkbox-btn:checked + label:hover:before {
 							opacity: 1;
 						}
+						
+						.fillers-checkbox-btn:disabled + label:before,
+						.fatness-radio-btn:disabled + label:before {
+							opacity: 0.3;
+						}
+						
+						.fillers-checkbox-btn:disabled + label,
+						.fatness-radio-btn:disabled + label {
+							cursor: default;
+						}
 			
 			.select-ice-submit {
 				font-size: 16px;
