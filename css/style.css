@@ -707,6 +707,7 @@ h5 {
 					text-decoration: none;
 					color: #fff;
 					margin-right: 21px;
+					box-shadow: inset 0 -1px 0 0 #c2cec7;
 				}
 				
 				.breadcrumbs-page a:hover,
@@ -728,7 +729,7 @@ h5 {
 				}
 				
 			.breadcrumbs-page:not(:last-child):after {
-				content: "»"; /* не разобрался пока как вставить спецсимвол(точнее он не сработал)*/
+				content: "»"; 
 				position: absolute;
 				top: 0;
 				right: 8px;
@@ -765,6 +766,8 @@ h5 {
 					background: rgba(255, 255, 255, 0.2) url("../img/select-arrow.svg") no-repeat 93% 52%;
 					-webkit-appearance: none;
 					-moz-appearance: none;
+					-ms-appearance: none;
+					-o-appearance: none;
 					appearance: none;
 				}
 				
