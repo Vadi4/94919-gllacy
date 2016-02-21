@@ -696,10 +696,13 @@ h5 {
 					margin-right: 21px;
 				}
 				
-				.breadcrumbs-page:not(:last-child) a:hover {
+				.breadcrumbs-page a:hover,
+				.breadcrumbs-page a:active {
 					color: #ec593c;
+					box-shadow: inset 0 -1px 0 0 #ec593c;
 				}
 				
+				.breadcrumbs-page:not(:last-child) a:hover,
 				.breadcrumbs-page:not(:last-child) a:active {
 					color: #ec593c;
 				}
@@ -904,6 +907,10 @@ h5 {
 						opacity: 0.85;
 					}
 					
+					.fatness-radio-btn + label:hover:before {
+						opacity: 1;
+					}
+					
 					.fatness-radio-btn:checked + label:before {
 						content: "";
 						position: absolute;
@@ -913,6 +920,10 @@ h5 {
 						height: 21px;
 						background: url("../img/radio-btn.svg") no-repeat;
 						opacity: 0.85;
+					}
+					
+					.fatness-radio-btn:checked + label:hover:before {
+						opacity: 1;
 					}
 				
 				.fillers-checkbox {
@@ -970,6 +981,10 @@ h5 {
 							opacity: 0.85;
 						}
 						
+						.fillers-checkbox-btn + label:hover:before {
+							opacity: 1;
+						}
+						
 						.fillers-checkbox-btn:checked + label:before {
 							content: "";
 							position: absolute;
@@ -979,6 +994,10 @@ h5 {
 							background: url("../img/check-box-checked.svg") no-repeat;
 							border-radius: 3px;
 							opacity: 0.85;
+						}
+						
+						.fillers-checkbox-btn:checked + label:hover:before {
+							opacity: 1;
 						}
 			
 			.select-ice-submit {
