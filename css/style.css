@@ -710,6 +710,8 @@ h5 {
 				.breadcrumbs-page:last-child a {
 					text-decoration: none;
 					cursor: default;
+					box-shadow: none;
+					color: #fff;
 				}
 				
 			.breadcrumbs-page:not(:last-child):after {
