@@ -32,10 +32,6 @@ h5 {
 	font-size:16px;
 }
 
-{
-	outline: 1px solid red;
-}
-
 .button {
 	display: inline-block;
 	vertical-align: top;
@@ -388,6 +384,14 @@ h5 {
 					color: #fff;
 					background: rgba(255, 255, 255, 0.2) url("../img/basket.svg") no-repeat 18% 50%;
 					border-radius: 15px;			
+				}
+				
+				.basket-link-full-index {
+					display: none;
+				}
+				
+				.basket-link-index {
+					display: block;
 				}
 				
 				.basket:hover .basket-link {
