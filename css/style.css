@@ -762,7 +762,6 @@ h5 {
 					border-radius: 14px;
 					color: #fff;
 					margin-right: 17px;
-					margin-top: 1px;
 					background: rgba(255, 255, 255, 0.2) url("../img/select-arrow.svg") no-repeat 93% 52%;
 					-webkit-appearance: none;
 					-moz-appearance: none;
@@ -783,7 +782,7 @@ h5 {
 				
 				.title-sort {
 					margin-left: 18px;
-					margin-bottom: 1px;
+					margin-bottom: 2px;
 				}
 				
 			.price-range {
@@ -793,7 +792,7 @@ h5 {
 				margin-right: 14px;
 				padding: 0 15px;
 				padding-top: 16px;
-				margin-top: 1px;
+				margin-top: 21x;
 				background: rgba(255, 255, 255, 0.2);
 				border-radius: 15px;
 				cursor: pointer;
@@ -846,7 +845,7 @@ h5 {
 				
 			.price-title {
 				margin-left: 16px;
-				margin-bottom: -2px;
+				margin-bottom: -3px;
 				width: 195px;
 				font-size: 0;
 			}
@@ -870,6 +869,7 @@ h5 {
 			
 				.title-fatness {
 					margin-left: 19px;
+					margin-bottom: 2px;
 				}
 			
 				.fatness-radio {
@@ -881,7 +881,7 @@ h5 {
 					height: 36px;
 					padding-left: 15px;
 					padding-right: 15px;
-					margin-top: 3px;
+					margin-top: 5x;
 					margin-left: 2px;
 				}
 				
@@ -1032,7 +1032,7 @@ h5 {
 				font-size: 16px;
 				height: 36px;
 				line-height: 32px;
-				margin-top: 38px;
+				margin-top: 39px;
 				float: right;
 				background: rgba(255, 255, 255, 0.2);
 				border: 2px solid #fff;
@@ -1655,4 +1655,5 @@ h5 {
 }
 
 	
+
 
