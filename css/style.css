@@ -530,9 +530,6 @@ h5 {
 				letter-spacing: 0.005in;
 			}
 
-	.main-content {
-	}	
-	
 		.slider {
 			position: relative;
 			padding-top: 295px;
@@ -622,7 +619,6 @@ h5 {
 	background-color: #fff;
 }
 
-/* делаем так что бы картинки бэли уже в кеше до переключения слайдов*/
 .site-wrapper:before,
 .site-wrapper:after {
     content: "";
@@ -1056,7 +1052,6 @@ h5 {
 				box-shadow: inset 0 1px 2px 1px #6c6d6c;
 			}
 			
-			
 		.items {		
 			font-size: 0px;
 			list-style: none;
@@ -1198,14 +1193,20 @@ h5 {
 				line-height: 30px;
 			}	
 
-			.features-table {
-				font-size: 16px;
-				line-height: 22px;
-				color: #323232;
-				font-weight: 500;
+			.features-list {
+				padding: 0;
+				margin-left: 0;
+				margin-top: 0;
+				list-style: none;
+				font-size: 0;
 			}	
 			
-				.features-table-cell {
+				.features-list li {
+					font-size: 16px;
+					line-height: 22px;
+					color: #323232;
+					font-weight: 500;
+					display: inline-block;
 					width: 347px;
 					padding-left: 78px;
 					vertical-align: top;
@@ -1213,46 +1214,45 @@ h5 {
 					position: relative;
 				}
 				
-					.features-table-cell-left {
+					.features-list li:nth-child(2n) {
 						padding-left: 73px;
 						width: 345px;
 					}
 				
-				.features-table-ice,
-				.features-table-cow,
-				.features-table-leaf,
-				.features-table-temp {
-					width: 47px;
-					height: 47px;
+				.features-list-ice:after,
+				.features-list-cow:after,
+				.features-list-leaf:after,
+				.features-list-temp:after {
+					content: "";
 					position: absolute;
-					top: -16px;
-					left: 21px;
-					background-color: black;
+					width: 47px;
+					height: 47px; 
 				}
 				
-				.features-table-ice {
-					background: url("../img/features-ico-ice.svg");
+				
+				.features-list-ice:after {
+					background: url("../img/features-ico-ice.svg") no-repeat;
 					top: -13px;
 					left: 21px;
 				}
 				
-				.features-table-cow {
-					background: url("../img/features-ico-cow.svg");
+				.features-list-cow:after {
+					background: url("../img/features-ico-cow.svg") no-repeat;
 					top: -13px;
 					left: 16px;
 				}
 				
-				.features-table-leaf {
-					background: url("../img/features-ico-leaf.svg");
+				.features-list-leaf:after {
+					background: url("../img/features-ico-leaf.svg") no-repeat;
 					top: -10px;
 					left: 22px;
 				}
 				
-				.features-table-temp {
-					background: url("../img/features-ico-temp.svg");
+				.features-list-temp:after {
+					background: url("../img/features-ico-temp.svg") no-repeat;
 					top: -9px;
 					left: 16px;
-				}
+				} 
 					
 		.news-mailing {
 			margin-bottom: 38px;
