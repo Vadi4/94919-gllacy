@@ -401,7 +401,8 @@ h5 {
 				}
 				
 				.basket:hover .basket-link-full {
-					background: #f8f7f4 url("../img/basket-full.png") no-repeat 18% 50%;
+					background: url("../img/basket-hover.svg") no-repeat 18% 50%,
+						#f8f7f4 url("../img/items-in-basket.svg") no-repeat 21% 46%;			
 					border-radius: 15px;
 					color: #323232;
 				}
@@ -712,13 +713,13 @@ h5 {
 				
 				.breadcrumbs-page a:hover,
 				.breadcrumbs-page a:active {
-					color: #ec593c;
-					box-shadow: inset 0 -1px 0 0 #ec593c;
+					color: #ffbc9e;
+					box-shadow: inset 0 -1px 0 0 #ffbc9e;
 				}
 				
 				.breadcrumbs-page:not(:last-child) a:hover,
 				.breadcrumbs-page:not(:last-child) a:active {
-					color: #ec593c;
+					color: #ffbc9e;
 				}
 				
 				.breadcrumbs-page:last-child a {
@@ -1207,6 +1208,7 @@ h5 {
 					color: #323232;
 					font-weight: 500;
 					display: inline-block;
+					vertical-align: top;
 					width: 347px;
 					padding-left: 78px;
 					vertical-align: top;
@@ -1540,8 +1542,8 @@ h5 {
 				.footer-info-link a:active,
 				.footer-copyright a:hover, 
 				.footer-copyright a:active {
-					color: #ec593c;
-					box-shadow: inset 0 -1px 0 0 #ec593c;
+					color: #ffbc9e;
+					box-shadow: inset 0 -1px 0 0 #ffbc9e;
 				}
 		
 		.footer-copyright {
