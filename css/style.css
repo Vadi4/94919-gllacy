@@ -88,7 +88,7 @@ h5 {
 
 		.header-nav {
 			float: left;
-			max-width: 435px;
+			max-width: 400px;
 			margin-top: 23px;
 		}
 		
@@ -634,20 +634,25 @@ h5 {
 .site-wrapper:after {
     background-image: url("../img/slide-2.png");
 }
-
 		.offers {
-			margin-bottom: 40px;
+			font-size: 0;
 		}
-		
+	
 			.offer {
+				display: inline-block;
+				vertical-align: top;
 				width: 420px;
 				min-height: 230px;
+				margin: 0 20px 40px 0;
 				border-radius: 11px;
 				position: relative;
 			}
 			
+				.offers article:nth-child(2n) {
+					margin-right: 0;
+				}
+			
 				.offer-raspberries {
-					float: left;
 					background: #9d1d3a;
 					background-image: url("../img/bg_raspberries.png");
 				}
@@ -665,7 +670,6 @@ h5 {
 					}
 				
 				.offer-chocolate {
-					float: right;
 					background: #371e11;
 					background-image: url("../img/bg_chocolate.png");
 				}
@@ -695,6 +699,7 @@ h5 {
 			font-size: 0;
 			list-style: none;
 			padding: 0;
+			max-width: 680px;
 		}
 			
 			.breadcrumbs-page {
@@ -875,14 +880,13 @@ h5 {
 				}
 			
 				.fatness-radio {
-					width: 386px;
+					max-width: 386px;
 					margin: 0;
 					padding: 0;
 					background: rgba(255, 255, 255, 0.2);
 					border-radius: 14px;
-					height: 36px;
-					padding-left: 15px;
-					padding-right: 15px;
+					min-height: 36px;
+					padding: 0 15px;
 					margin-top: 5x;
 					margin-left: 2px;
 				}
@@ -1070,6 +1074,12 @@ h5 {
 				margin-right: 20px;
 				font-size: 16px;
 				min-height: 316px;
+			}
+			
+			.item-image img {
+				max-width: 100%;
+				max-height: 200px;
+				overflow: hidden;
 			}
 			
 			.item:after {
@@ -1268,8 +1278,7 @@ h5 {
 			}
 				.blog-news {
 					float: left;
-					background: #fff;
-					background: url("../img/bg_strawberry_news.jpg");
+					background: #fff url("../img/bg_strawberry_news.jpg") no-repeat center;
 					border-radius: 11px;
 				}
 				
@@ -1426,11 +1435,15 @@ h5 {
 				.pagination .page-previous {
 					background: url("../img/page-next.png") no-repeat 50%;
 					-webkit-transform: rotate(180deg);
+					-ms-transform: rotate(180deg);
+					transform: rotate(180deg);
 				}
 				
 				.pagination .page-previous:hover {
 					background: url("../img/page-next.png") no-repeat 50%;
 					-webkit-transform: rotate(180deg);
+					-ms-transform: rotate(180deg);
+					transform: rotate(180deg);
 				}
 				
 				.inactive {
