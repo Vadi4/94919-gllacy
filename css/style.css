@@ -443,6 +443,7 @@ h5 {
 						.table-cell-ice {
 							width: 58px;
 						}
+						
 							.basket-table-img {
 								margin-top: -7px;
 							}
@@ -538,6 +539,7 @@ h5 {
 			color: #fff;
 			margin-bottom: 40px;
 		}
+		
 			.slide {
 				display: none;
 			}
@@ -887,7 +889,6 @@ h5 {
 					border-radius: 14px;
 					min-height: 36px;
 					padding: 0 15px;
-					margin-top: 5x;
 					margin-left: 2px;
 				}
 				
@@ -1127,7 +1128,8 @@ h5 {
 					top: 149px;
 					text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 				}
-					.item-price-sumbol {
+				
+					.item-price-symbol {
 						background: url(../img/rub.svg) no-repeat 0 0;
 						display: inline-block;
 						vertical-align: top;
@@ -1279,6 +1281,7 @@ h5 {
 			margin-bottom: 38px;
 			color: #353535;
 		}
+		
 				.blog-news {
 					width: 420px;
 					min-height: 220px;
@@ -1315,9 +1318,7 @@ h5 {
 					border-radius: 15px;
 					background: #f8f7f4 url(../img/mailing.png) repeat 0 0;
 					padding: 5px;
-					width: 410px;
-					/*border: 5px solid #e0edf7;*/
-					/*border-image: url("../img/mailing-border.png") 5 round;*/
+					width: 420px;
 				}
 					.mailing-form {
 						background: #f8f7f4;
@@ -1325,9 +1326,9 @@ h5 {
 						padding: 24px 0 20px 17px;
 						min-height: 164px;
 					}
+					
 					.mailing-text {
-						/*margin: 29px 25px 14px 22px;*/
-						margin: 0 0 14px;
+						margin: 5px 6px 14px;
 						font-size: 16px;
 						width: 380px;
 						line-height: 22px;
@@ -1336,7 +1337,7 @@ h5 {
 						.mailing-form-email {
 							width: 208px;
 							height: 42px;
-							margin: 0 7px 0 0;
+							margin: 0 7px 0 5px;
 							border: 1px solid #d3d3d2;
 							border-radius: 3px;
 							padding: 0 10px;
@@ -1362,6 +1363,7 @@ h5 {
 			background: #fefefe;
 			z-index: 25;
 		}
+		
 			.contacts p {
 				margin-left: 26px;
 				font-size: 14px;
@@ -1484,9 +1486,6 @@ h5 {
 		.main-content > .container {
 			border-bottom: 2px solid #a9bbb1;
 		}			
-	
-	.main-footer {
-	}
 
 		.footer-social {
 			float: left;
@@ -1668,12 +1667,15 @@ h5 {
 	0% {
 	transform: translateY(-2000px);
 	}
+	
 	70%  {
 	transform: translateY(30px);
 	}
+	
 	90%  {
 	transform: translateY(-10px);
 	}
+	
 	100% {
 	transform: translateY(0);
 	}
