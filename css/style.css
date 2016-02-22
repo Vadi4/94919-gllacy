@@ -846,7 +846,7 @@ h5 {
 				
 			.price-title {
 				margin-left: 16px;
-				margin-bottom: -3px;
+				margin-bottom: 2px;
 				width: 195px;
 				font-size: 0;
 			}
@@ -854,6 +854,7 @@ h5 {
 				.price-title label {
 					font-size: 14px;
 					display: inline-block;
+					vertical-align: top;
 					width: 50%;
 				}
 				
