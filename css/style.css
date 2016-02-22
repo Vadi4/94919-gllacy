@@ -1059,7 +1059,7 @@ h5 {
 			}
 			
 		.items {		
-			font-size: 0px;
+			font-size: 0;
 			list-style: none;
 			padding: 0;
 			margin-bottom: 44px;
@@ -1068,7 +1068,6 @@ h5 {
 			.item {
 				position: relative;
 				display: inline-block;
-				float: left;
 				vertical-align: top;
 				width: 200px;
 				margin-right: 20px;
@@ -1123,10 +1122,19 @@ h5 {
 					position: absolute;
 					font-size: 45px;
 					font-weight: bold;
+					letter-spacing: 0;
 					left: 1px;
 					top: 149px;
+					text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 				}
-					.item-price-sumbol{
+					.item-price-sumbol {
+						background: url(../img/rub.svg) no-repeat 0 0;
+						display: inline-block;
+						vertical-align: top;
+						font-size: 0;
+						height: 37px;
+						width: 32px;
+						margin-top: -7px;
 						margin-left: -5px;
 					}
 					
@@ -1271,17 +1279,9 @@ h5 {
 			margin-bottom: 38px;
 			color: #353535;
 		}
-		
-		.news-mailing .blog-news {
-			width: 420px;
-			min-height: 220px;
-		}
-			
-			.news-mailing .mailing {
-					width: 410px;
-					min-height: 210px;
-			}
 				.blog-news {
+					width: 420px;
+					min-height: 220px;
 					float: left;
 					background: #fff url("../img/bg_strawberry_news.jpg") no-repeat center;
 					border-radius: 11px;
@@ -1310,15 +1310,24 @@ h5 {
 						}
 				
 				.mailing {
+					box-sizing: border-box;
 					float: right;
 					border-radius: 15px;
-					background: #f8f7f4;
-					border: 5px solid #e0edf7;
-					border-image: url("../img/mailing-border.png") 5 round;
+					background: #f8f7f4 url(../img/mailing.png) repeat 0 0;
+					padding: 5px;
+					width: 410px;
+					/*border: 5px solid #e0edf7;*/
+					/*border-image: url("../img/mailing-border.png") 5 round;*/
 				}
-				
+					.mailing-form {
+						background: #f8f7f4;
+						border-radius: 15px;
+						padding: 24px 0 20px 17px;
+						min-height: 164px;
+					}
 					.mailing-text {
-						margin: 29px 25px 14px 22px;
+						/*margin: 29px 25px 14px 22px;*/
+						margin: 0 0 14px;
 						font-size: 16px;
 						width: 380px;
 						line-height: 22px;
@@ -1327,7 +1336,7 @@ h5 {
 						.mailing-form-email {
 							width: 208px;
 							height: 42px;
-							margin: 0 7px 20px 22px;
+							margin: 0 7px 0 0;
 							border: 1px solid #d3d3d2;
 							border-radius: 3px;
 							padding: 0 10px;

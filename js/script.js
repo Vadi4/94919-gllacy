@@ -1,4 +1,3 @@
-
 var link = document.querySelector(".contacts-button");
 var popup = document.querySelector(".feedback-form");
 var close = popup.querySelector(".feedback-form-button-close");
@@ -13,14 +12,14 @@ var storageEmail = localStorage.getItem("email");
 		event.preventDefault();
 		popup.classList.add("feedback-form-show");
 		
-		if(storageLogin) {
+		if (storageLogin) {
 			login.value = storageLogin;
-				if(storageEmail) {
-					email.value = storageEmail;
-					textarea.focus();
-				} else {
-					email.focus();
-				}
+			if (storageEmail) {
+				email.value = storageEmail;
+				textarea.focus();
+			} else {
+				email.focus();
+			}
 		} else {
 			login.focus();
 		}
@@ -53,4 +52,4 @@ var storageEmail = localStorage.getItem("email");
 				popup.classList.remove("feedback-form-show"); 
 			}
 		}
-	});	
+	});
