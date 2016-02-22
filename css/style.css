@@ -1258,7 +1258,8 @@ h5 {
 			margin-bottom: 38px;
 			color: #353535;
 		}
-			.news-mailing article {
+			.news-mailing .blog-news,
+			.news-mailing .mailing {
 				width: 420px;
 				min-height: 220px;
 			}
