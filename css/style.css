@@ -113,7 +113,7 @@ h5 {
 						padding: 0 14px;
 						height: 32px;
 						line-height: 32px;
-						font-weight: bold;
+						font-weight: 700;
 						border-radius: 13px;
 						text-decoration: none;
 					}
@@ -189,7 +189,7 @@ h5 {
 								}
 								
 								.nav-list-inner .nav-list-new  {
-									font-weight: bold;
+									font-weight: 700;
 									position: relative;
 									padding-top: 8px;
 									padding-bottom: 10px;
@@ -225,6 +225,7 @@ h5 {
 				display: inline-block;
 				vertical-align: top;
 				font-size: 14px;
+				font-weight: 400;
 				height: 36px;
 				position: relative;
 				margin-right: 10px;	
@@ -286,7 +287,8 @@ h5 {
 					vertical-align: top;
 					text-decoration: none;
 					color: #fff;
-					padding: 0 15px 0 44px;
+					font-weight: 500;
+					padding: 0 15px 0 43px;
 					background: rgba(255, 255, 255, 0.2) url("../img/enter.svg") no-repeat 23% 50%;
 					border-radius: 15px;
 					height: 32px;
@@ -326,6 +328,7 @@ h5 {
 						padding: 0 32px;
 						height: 35px;
 						font-size: 15px;
+						font-weight: 700;
 						line-height: 35px;
 						border-radius: 15px;
 					}
@@ -368,6 +371,7 @@ h5 {
 					display: none;
 					padding: 0 34px 0 45px;
 					height: 32px;
+					font-weight: 500;
 					line-height: 32px;
 					text-decoration: none;
 					color: #fff;
@@ -522,14 +526,13 @@ h5 {
 			.header-contacts-time {
 				margin-top: -2px;
 				font-size: 14px;
-				font-weight: bold;
+				font-weight: 700;
 			}
 			
 			.header-contacts-phone {
 				margin-top: 2px;
 				font-size: 22px;
-				font-weight: bold;
-				letter-spacing: 0.005in;
+				font-weight: 900;
 			}
 
 		.slider {
@@ -548,7 +551,7 @@ h5 {
 					width: 700px;
 					margin: 0 auto;
 					margin-bottom: 30px;
-					font-weight: 800;
+					font-weight: 900;
 					font-size: 60px;
 					line-height: 60px;
 				}
@@ -581,7 +584,7 @@ h5 {
 					display: inline-block;
 					padding: 12px 50px;
 
-					font-weight: 600;
+					font-weight: 700;
 					font-size: 31px;
 					line-height: 41px;
 					vertical-align: top;
@@ -767,6 +770,7 @@ h5 {
 					padding-left: 13px;
 					border: none;
 					font-size: 16px;
+					font-weight: 500;
 					border-radius: 14px;
 					color: #fff;
 					margin-right: 17px;
@@ -791,6 +795,8 @@ h5 {
 				.title-sort {
 					margin-left: 18px;
 					margin-bottom: 2px;
+					font-size: 14px;
+					font-weight: 500;
 				}
 				
 			.price-range {
@@ -860,6 +866,7 @@ h5 {
 			
 				.price-title label {
 					font-size: 14px;
+					font-weight: 500;
 					display: inline-block;
 					vertical-align: top;
 					width: 50%;
@@ -879,6 +886,8 @@ h5 {
 				.title-fatness {
 					margin-left: 19px;
 					margin-bottom: 2px;
+					font-size: 14px;
+					font-weight: 500;
 				}
 			
 				.fatness-radio {
@@ -907,7 +916,7 @@ h5 {
 					.fatness-radio-btn + label {
 						cursor: pointer;
 						font-size: 16px;
-						font-weight: medium;
+						font-weight: 500;
 					}
 					
 					.fatness-radio-btn {
@@ -962,6 +971,8 @@ h5 {
 				
 				.fillers-title {
 					margin: 12px 0 0 17px;
+					font-size: 14;
+					font-weight: 500;
 				}
 			
 					.fillers-checkbox li {
@@ -972,6 +983,7 @@ h5 {
 						display: inline-block;
 						vertical-align: top;
 						font-size: 16px;
+						font-weight: medium;
 						margin-right: 19px;
 						line-height: 36px;
 					}
@@ -1037,6 +1049,7 @@ h5 {
 			
 			.select-ice-submit {
 				font-size: 16px;
+				font-weight: 500;
 				height: 36px;
 				line-height: 32px;
 				margin-top: 39px;
@@ -1154,7 +1167,7 @@ h5 {
 					font-size: 16px;
 					line-height: 22px;
 					text-decoration: none;
-					font-weight: medium;
+					font-weight: 500;
 					display: block;
 					text-align: center;
 					margin: 5px 6px;
@@ -1212,6 +1225,7 @@ h5 {
 				margin: 0 20px 27px 20px;
 				padding-top: 21px;
 				font-size: 24px;
+				font-weight: 500;
 				line-height: 30px;
 			}	
 
@@ -1227,7 +1241,7 @@ h5 {
 					font-size: 16px;
 					line-height: 22px;
 					color: #323232;
-					font-weight: 500;
+					font-weight: 400;
 					display: inline-block;
 					vertical-align: top;
 					width: 347px;
@@ -1239,7 +1253,7 @@ h5 {
 				
 					.features-list li:nth-child(2n) {
 						padding-left: 73px;
-						width: 345px;
+						width: 343px;
 					}
 				
 				.features-list-ice:after,
@@ -1294,6 +1308,7 @@ h5 {
 						margin: 24px 0 3px 20px;
 						color: #5a5a5a;
 						font-size: 16px;
+						font-weight: 500;
 					}
 				
 					.news-mailing-link {
@@ -1341,6 +1356,7 @@ h5 {
 							border: 1px solid #d3d3d2;
 							border-radius: 3px;
 							padding: 0 10px;
+							font-size: 16px;
 						}
 						
 						.mailing-form-submit {
@@ -1379,7 +1395,7 @@ h5 {
 					.contacts-phone-number {
 						font-size: 18px;
 						line-height: 24px;
-						font-weight: bold;
+						font-weight: 700;
 					}
 				
 			.contacts-phone {
@@ -1393,7 +1409,7 @@ h5 {
 				border-radius: 18px;
 				width: 186px;
 				font-size: 17px;
-				font-weight: bold;
+				font-weight: 700;
 				height: 44px;
 				line-height: 44px;
 			}
@@ -1604,7 +1620,7 @@ h5 {
 		.title-feedback-form {
 			font-size: 24px;
 			color: #343434;
-			font-weight: medium;
+			font-weight: 500;
 			margin: 20px 0 22px 25px;
 		}
 		
