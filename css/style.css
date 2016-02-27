@@ -743,7 +743,7 @@ h5
     top: 72px;
     right: 20px;
 
-    float: right;
+    float: right; 
 
     text-align: right;
 }
@@ -1901,8 +1901,8 @@ h5
 {
     position: absolute;
     z-index: 25;
-    top: 68px;
-    right: 200px;
+    top: 69px;
+    right: 20px;
 
     width: 302px;
     min-height: 305px;
@@ -2217,7 +2217,8 @@ h5
     position: fixed;
     z-index: 30;
     top: 20%;
-    left: 30%;
+    left: 50%;
+	margin-left: -239px;
 
     display: none;
 

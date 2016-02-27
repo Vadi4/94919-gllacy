@@ -6,7 +6,7 @@
 		<title>HTML Academy: Глейси</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 		<link href="css/normalize.css" type="text/css" rel="stylesheet">
-		<link href="css/style.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 	<input class="slider-radio-covert" type="radio" id="btn-1" name="toggle" checked>
@@ -207,23 +207,25 @@
 					<img class="map-pointer" src="img/map-pointer.png" width="79" height="139" alt="">
 				</div>
 				<div class="map" id="yandex-map"> 
-					<div class="contacts">
-						<p class="contacts-address">
-							Адрес главного офиса и<br>офлайн магазина:<br> 
-							<span class="contacts-address-street">
-								ул. Большая Конюшенная<br>19/8, Санкт-Петербург
-							</span>
-						</p>
-						<p class="contacts-phone">
-							Для заказов по телефону:<br>
-							<span class="contacts-phone-number">
-								8 812 450-25-25
-							</span>
-							<br>
-							(c 10 до 20 ежедневно) 
-						</p>
-						<a class="contacts-button button" href="contacts.html">Форма обратной связи</a>
-					</div>
+					<div class="container">
+						<div class="contacts">
+							<p class="contacts-address">
+								Адрес главного офиса и<br>офлайн магазина:<br> 
+								<span class="contacts-address-street">
+									ул. Большая Конюшенная<br>19/8, Санкт-Петербург
+								</span>
+							</p>
+							<p class="contacts-phone">
+								Для заказов по телефону:<br>
+								<span class="contacts-phone-number">
+									8 812 450-25-25
+								</span>
+								<br>
+								(c 10 до 20 ежедневно) 
+							</p>
+							<a class="contacts-button button" href="contacts.html">Форма обратной связи</a>
+						</div>
+					</div>	
 				</div>
 			</main>
 			<footer class="main-footer">
@@ -261,15 +263,15 @@
 					</div>
 				</div>
 			</footer>
-		</div>	
-		<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-			<div class="title-feedback-form">Мы обязательно вам ответим!</div>
-			<input class="feedback-form-input" type="text" placeholder="Как вас зовут?">
-			<input class="feedback-form-input feedback-form-email" type="email" placeholder="Ваша почта для ответа?">
-			<textarea class="feedback-form-textarea form-input-textarea" placeholder="Напишите что нибудь..."></textarea>
-			<input class="feedback-form-submit button" type="submit" value="Отправить">
-			<button class="feedback-form-button-close" type="button"></button>
-		</form>
+		</div>
+			<form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+				<div class="title-feedback-form">Мы обязательно вам ответим!</div>
+				<input class="feedback-form-input" type="text" placeholder="Как вас зовут?">
+				<input class="feedback-form-input feedback-form-email" type="email" placeholder="Ваша почта для ответа?">
+				<textarea class="feedback-form-textarea form-input-textarea" placeholder="Напишите что нибудь..."></textarea>
+				<input class="feedback-form-submit button" type="submit" value="Отправить">
+				<button class="feedback-form-button-close" type="button"></button>
+			</form>
 		<script src="js/script.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ENVTiNyUZH8_BJeEywV_PGT-8j0k8ZnX&width=100%25&height=430&id=yandex-map&lang=ru_RU&sourceType=constructor"></script>
 	</body>
