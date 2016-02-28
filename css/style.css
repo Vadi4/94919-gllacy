@@ -7,12 +7,12 @@ body
 
 body
 {
-    font-family: 'Roboto', 'Arial', sans-serif;
-    font-size: 16px;
-    line-height: 22px;
+    background: #849d8f;
 
     color: #fff;
-    background: #849d8f;
+    font-size: 16px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    line-height: 22px;
 }
 
 h1
@@ -43,16 +43,16 @@ h5
 .button
 {
     display: inline-block;
-
-    vertical-align: top;
-    text-decoration: none;
-
-    color: #fff;
     border: none;
     background: #f26843;
     background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
     box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
+
+    color: #fff;
+
+    vertical-align: top;
+    text-decoration: none;
 }
 
 .button:hover,
@@ -80,36 +80,36 @@ h5
 {
     min-width: 900px;
 
+    background: #849d8f url('../img/slide-1.png') no-repeat top center;
+
     -webkit-transition: background-image .5s ease, background-color .5s ease;
             transition: background-image .5s ease, background-color .5s ease;
-
-    background: #849d8f url('../img/slide-1.png') no-repeat top center;
 }
 
 .container
 {
     position: relative;
-
-    width: 860px;
     margin: 0 auto;
     padding: 0 20px;
+
+    width: 860px;
 }
 
 .main-header
 {
     height: 96px;
+    background: #849d8fl;
 
     color: #fff;
-    background: #849d8fl;
 }
 
 .header-logo
 {
     float: left;
+    margin: 10px 16px 0 -5px;
 
     width: 153px;
     height: 63px;
-    margin: 10px 16px 0 -5px;
 
     text-decoration: none;
 }
@@ -117,48 +117,48 @@ h5
 .header-nav
 {
     float: left;
+    margin-top: 23px;
 
     max-width: 400px;
-    margin-top: 23px;
 }
 
 .header-nav-list
 {
-    font-size: 0;
 
     margin: 0;
     padding: 0;
 
     list-style: none;
+    font-size: 0;
 }
 
 .nav-list-item
 {
-    font-size: 16px;
 
     display: inline-block;
 
     padding-bottom: 5px;
 
-    vertical-align: top;
-
     border-radius: 13px;
+
+    vertical-align: top;
+    font-size: 16px;
 }
 
 .nav-list-item > a
 {
-    font-weight: 700;
-    line-height: 32px;
 
     display: block;
-
-    height: 32px;
     padding: 0 14px;
 
-    text-decoration: none;
+    height: 32px;
+    border-radius: 13px;
 
     color: #fff;
-    border-radius: 13px;
+
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 32px;
 }
 
 .nav-list-item	span
@@ -174,10 +174,10 @@ h5
 
 .nav-list-item > a:hover
 {
-    text-decoration: none;
+    background: #f7f6f3;
 
     color: #333;
-    background: #f7f6f3;
+    text-decoration: none;
 }
 
 .nav-list-item > a:active
@@ -188,10 +188,10 @@ h5
 
 .nav-list-item-current > a
 {
-    text-decoration: none;
+    background: #d07058;
 
     color: #fff;
-    background: #d07058;
+    text-decoration: none;
 }
 
 .nav-list-item-current span
@@ -201,24 +201,24 @@ h5
 
 .nav-list-inner
 {
-    font-size: 14px;
 
     position: absolute;
-    z-index: 25;
     top: 37px;
     left: -7px;
+    z-index: 25;
 
     display: none;
-
-    width: 145px;
     margin: 0;
     padding: 0;
 
-    list-style: none;
+    width: 145px;
 
     border-radius: 3px;
     background: #f8f7f4;
     box-shadow: 0 15px 15px 5px rgba(0, 0, 0, .2);
+
+    list-style: none;
+    font-size: 14px;
 }
 
 .nav-list-inner	 a
@@ -227,9 +227,9 @@ h5
 
     padding: 5px 21px;
 
-    text-decoration: none;
-
     color: #343434;
+
+    text-decoration: none;
 }
 
 .nav-list-inner	 a:hover
@@ -244,39 +244,39 @@ h5
 
 .nav-list-inner .nav-list-inner-current
 {
-    color: white;
     background: #d07058;
+    color: white;
 }
 
 .nav-list-inner .nav-list-inner-current:hover
 {
-    color: #343434;
     background: #fbded8;
+    color: #343434;
 }
 
 .nav-list-inner .nav-list-new
 {
-    font-weight: 700;
 
     position: relative;
 
     padding-top: 8px;
     padding-bottom: 10px;
+    font-weight: 700;
 }
 
 .nav-list-inner .nav-list-new::after
 {
     position: absolute;
-    z-index: 1;
     right: 6px;
     bottom: 0;
     left: 6px;
+    z-index: 1;
 
     height: 1px;
 
-    content: '';
-
     background: #d1d0ce;
+
+    content: '';
 }
 
 .nav-list-item-covert
@@ -291,32 +291,31 @@ h5
 
 .user-block
 {
-    font-size: 0;
 
     float: right;
+    margin-top: 23px;
 
     max-width: 262px;
-    margin-top: 23px;
+    font-size: 0;
 }
 
 .form-search
 {
-    font-size: 14px;
-    font-weight: 400;
 
     position: relative;
 
     display: inline-block;
-
-    height: 36px;
     margin-right: 10px;
 
+    height: 36px;
+
     vertical-align: top;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .form-search-btn
 {
-    font-size: 0;
 
     width: 33px;
     height: 33px;
@@ -324,21 +323,22 @@ h5
     border: none;
     border-radius: 100%;
     background: rgba(255, 255, 255, .2) url('../img/loupe.svg') no-repeat 50% 50%;
+    font-size: 0;
 }
 
 .form-search-covert
 {
     position: absolute;
-    z-index: 25;
     top: 36px;
     right: 0;
+    z-index: 25;
 
     display: none;
-
-    color: #353535;
     border-radius: 3px;
     background: #f8f7f4;
     box-shadow: 0 15px 15px 5px rgba(0, 0, 0, .2);
+
+    color: #353535;
 }
 
 .form-search:hover	.form-search-btn
@@ -355,16 +355,16 @@ h5
 
 .form-search-input
 {
-    font-weight: 700;
 
     box-sizing: border-box;
-    width: 309px;
-    height: 37px;
     margin: 15px 15px;
     padding: 0 11px;
+    width: 309px;
+    height: 37px;
 
     border: 1px solid #d3d3d2;
     border-radius: 3px;
+    font-weight: 700;
 }
 
 .form-search-input::-webkit-input-placeholder
@@ -382,14 +382,13 @@ h5
 .form-search-input:active
 {
     padding: 0 10px;
+    outline: 0;
 
     border: 2px solid #d3d3d2;
-    outline: 0;
 }
 
 .form-enter
 {
-    font-size: 14px;
 
     position: relative;
 
@@ -397,35 +396,36 @@ h5
 
     height: 36px;
 
-    vertical-align: top;
-
     color: #353535;
+
+    vertical-align: top;
+    font-size: 14px;
 }
 
 .form-enter-link
 {
-    font-weight: 500;
-    line-height: 32px;
 
     display: inline-block;
-
-    height: 32px;
     padding: 0 15px 0 43px;
 
-    vertical-align: top;
-    text-decoration: none;
-
-    color: #fff;
+    height: 32px;
     border: none;
     border-radius: 15px;
     background: rgba(255, 255, 255, .2) url('../img/enter.svg') no-repeat 23% 50%;
+
+    color: #fff;
+
+    vertical-align: top;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 32px;
 }
 
 .form-enter:hover .form-enter-link
 {
-    color: #323232;
     border-radius: 15px;
     background: #f8f7f4 url('../img/enter-hover.svg') no-repeat 23% 50%;
+    color: #323232;
 }
 
 .form-enter-covert
@@ -435,10 +435,10 @@ h5
     right: -3px;
 
     display: none;
+    padding: 20px 15px 15px 15px;
 
     width: 243px;
     height: 140px;
-    padding: 20px 15px 15px 15px;
 
     border-radius: 3px;
     background: #f8f7f4;
@@ -447,16 +447,16 @@ h5
 
 .form-enter-input
 {
-    font-weight: 700;
 
     box-sizing: border-box;
-    width: 240px;
-    height: 37px;
     margin-bottom: 10px;
     padding: 0 15px;
+    width: 240px;
+    height: 37px;
 
     border: 1px solid #d3d3d2;
     border-radius: 3px;
+    font-weight: 700;
 }
 
 .form-enter-input::-webkit-input-placeholder
@@ -474,32 +474,32 @@ h5
 .form-enter-input:active
 {
     padding: 0 14px;
+    outline: 0;
 
     border: 2px solid #d3d3d2;
-    outline: 0;
 }
 
 .form-enter-button
 {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 35px;
-
-    height: 35px;
     margin-top: 5px;
     padding: 0 32px;
 
+    height: 35px;
+
     border-radius: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 35px;
 }
 
 .form-enter-covert-links
 {
-    font-size: 13px;
 
     float: right;
+    margin-top: 2px;
 
     width: 122px;
-    margin-top: 2px;
+    font-size: 13px;
 }
 
 .form-enter-covert-links > a
@@ -527,49 +527,49 @@ h5
 
 .basket
 {
-    font-size: 14px;
 
     position: relative;
 
     display: inline-block;
-
-    height: 36px;
     margin-left: 10px;
 
+    height: 36px;
+
     vertical-align: top;
+    font-size: 14px;
 }
 
 .basket-link
 {
-    font-weight: 500;
-    line-height: 32px;
 
     display: none;
-
-    height: 32px;
     padding: 0 34px 0 45px;
 
-    text-decoration: none;
-
-    color: #fff;
+    height: 32px;
     border-radius: 15px;
     background: rgba(255, 255, 255, .2) url('../img/basket.svg') no-repeat 18% 50%;
+
+    color: #fff;
+
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 32px;
 }
 
 .basket-link-full
 {
-    line-height: 32px;
 
     display: block;
-
-    height: 32px;
     padding: 0 15px 0 45px;
 
-    text-decoration: none;
-
-    color: #fff;
+    height: 32px;
     border-radius: 15px;
     background: rgba(255, 255, 255, .2) url('../img/basket.svg') no-repeat 18% 50%;
+
+    color: #fff;
+
+    text-decoration: none;
+    line-height: 32px;
 }
 
 .basket-link-full-index
@@ -584,17 +584,17 @@ h5
 
 .basket:hover .basket-link
 {
-    color: #323232;
     border-radius: 15px;
     background: #f8f7f4 url('../img/basket-hover.svg') no-repeat 18% 50%;
+    color: #323232;
 }
 
 .basket:hover .basket-link-full
 {
-    color: #323232;
     border-radius: 15px;
     background: url('../img/basket-hover.svg') no-repeat 18% 50%,
     #f8f7f4 url('../img/items-in-basket.svg') no-repeat 21% 46%;
+    color: #323232;
 }
 
 .basket-table-container
@@ -609,19 +609,19 @@ h5
 
 .basket-table
 {
-    line-height: 17px;
 
     width: 508px;
 
     color: #333;
+    line-height: 17px;
 }
 
 .basket-table-item td
 {
     height: 53px;
+    vertical-align: top;
 
     text-align: center;
-    vertical-align: top;
 }
 
 .table-cell-close
@@ -660,26 +660,26 @@ h5
 
 .table-cell-caption
 {
-    font-size: 13px;
 
     width: 240px;
+    font-size: 13px;
 }
 
 .table-cell-weight
 {
-    font-weight: 400;
 
     width: 155px;
+    font-weight: 400;
 }
 
 .basket-table-item .table-cell-cost
 {
-    font-size: 13;
-    font-weight: 400;
 
     width: 66px;
 
     text-align: left;
+    font-weight: 400;
+    font-size: 13;
 }
 .basket-table-price
 {
@@ -706,31 +706,31 @@ h5
 
 .basket-table-total-cost
 {
-    font-size: 15px;
-    font-weight: bold;
 
     margin-right: 12px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .basket-table-link-order
 {
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 35px;
-
-    height: 35px;
     margin-right: -4px;
     padding: 0 22px;
 
+    height: 35px;
+
     border-radius: 14px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 35px;
 }
 
 .basket:hover .basket-table-container
 {
     position: absolute;
-    z-index: 25;
     top: 36px;
     right: 0;
+    z-index: 25;
 
     display: block;
 
@@ -750,18 +750,18 @@ h5
 
 .header-contacts-time
 {
-    font-size: 14px;
-    font-weight: 700;
 
     margin-top: -2px;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .header-contacts-phone
 {
-    font-size: 22px;
-    font-weight: 900;
 
     margin-top: 2px;
+    font-weight: 900;
+    font-size: 22px;
 }
 
 .slider
@@ -771,9 +771,9 @@ h5
     margin-bottom: 40px;
     padding-top: 295px;
 
-    text-align: center;
-
     color: #fff;
+
+    text-align: center;
 }
 
 .slide
@@ -783,39 +783,39 @@ h5
 
 .slide-title
 {
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 60px;
-
-    width: 700px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    width: 700px;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
 }
 
 .slider-controls
 {
-    font-size: 0;
 
     position: absolute;
-    z-index: 20;
     bottom: 21px;
     left: 0;
+    z-index: 20;
+    font-size: 0;
 }
 
 .slider-controls label
 {
     display: inline-block;
+    margin-right: 8px;
 
     width: 17px;
     height: 17px;
-    margin-right: 8px;
-
-    cursor: pointer;
-    vertical-align: top;
 
     border: 2px solid #fff;
     border-radius: 50%;
     background-color: transparent;
+    vertical-align: top;
+
+    cursor: pointer;
 }
 
 .slider-controls label:hover
@@ -830,24 +830,24 @@ h5
 
 .slide-btn
 {
-    font-size: 31px;
-    font-weight: 700;
-    line-height: 41px;
 
     display: inline-block;
 
     padding: 12px 50px;
-
-    vertical-align: top;
-    text-decoration: none;
-
-    color: #fff;
     border-radius: 100px;
     background: #f26843;
     background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
     background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
     box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
+
+    color: #fff;
+
+    vertical-align: top;
+    text-decoration: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 41px;
 }
 
 #btn-1:checked ~ .site-wrapper #slide-1,
@@ -910,14 +910,14 @@ h5
     position: relative;
 
     display: inline-block;
+    margin: 0 20px 40px 0;
+    min-height: 230px;
 
     width: 420px;
-    min-height: 230px;
-    margin: 0 20px 40px 0;
-
-    vertical-align: top;
 
     border-radius: 11px;
+
+    vertical-align: top;
 }
 
 .offers article:nth-child(2n)
@@ -939,11 +939,11 @@ h5
 
 .offer-text
 {
-    font-size: 18px;
-    font-weight: bold;
 
     margin: 0 20px;
     margin-bottom: 85px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .offer-chocolate
@@ -954,18 +954,18 @@ h5
 
 .offer-button
 {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 46px;
 
     position: absolute;
     right: 22px;
     bottom: 23px;
-
-    height: 46px;
     padding: 0 22px;
 
+    height: 46px;
+
     border-radius: 18px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 46px;
 }
 
 .offer-chocolate .offer-button
@@ -982,40 +982,40 @@ h5
 
 .breadcrumbs
 {
-    font-size: 0;
-
-    max-width: 680px;
     padding: 0;
 
+    max-width: 680px;
+
     list-style: none;
+    font-size: 0;
 }
 
 .breadcrumbs-page
 {
-    font-size: 14px;
 
     position: relative;
 
     display: inline-block;
 
     vertical-align: top;
+    font-size: 14px;
 }
 
 .breadcrumbs-page a
 {
     margin-right: 21px;
-
-    text-decoration: none;
+    box-shadow: inset 0 -1px 0 0 #c2cec7;
 
     color: #fff;
-    box-shadow: inset 0 -1px 0 0 #c2cec7;
+
+    text-decoration: none;
 }
 
 .breadcrumbs-page a:hover,
 .breadcrumbs-page a:active
 {
-    color: #ffbc9e;
     box-shadow: inset 0 -1px 0 0 #ffbc9e;
+    color: #ffbc9e;
 }
 
 .breadcrumbs-page:not(:last-child) a:hover,
@@ -1026,11 +1026,11 @@ h5
 
 .breadcrumbs-page:last-child a
 {
-    cursor: default;
-    text-decoration: none;
+    box-shadow: none;
 
     color: #fff;
-    box-shadow: none;
+    text-decoration: none;
+    cursor: default;
 }
 
 .breadcrumbs-page:not(:last-child)::after
@@ -1049,39 +1049,39 @@ h5
 
 .select-ice
 {
-    font-size: 0;
 
     margin-bottom: 38px;
 
     background: #849d8f;
+    font-size: 0;
 }
 
 .select-ice > div
 {
-    font-size: 16px;
-    font-size: 14px;
 
     display: inline-block;
 
-    vertical-align: top;
-
     color: #fff;
+
+    vertical-align: top;
+    font-size: 16px;
+    font-size: 14px;
 }
 
 .sort-list
 {
-    font-size: 16px;
-    font-weight: 500;
-
-    width: 192px;
-    height: 36px;
     margin-right: 17px;
     padding-left: 13px;
 
-    color: #fff;
+    width: 192px;
+    height: 36px;
     border: none;
     border-radius: 14px;
     background: rgba(255, 255, 255, .2) url('../img/select-arrow.svg') no-repeat 93% 52%;
+
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
 
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -1092,40 +1092,40 @@ h5
 
 .sort-list option
 {
-    font-size: 14px;
     font-weight: 400;
+    font-size: 14px;
 }
 
 .sort-list:hover
 {
-    color: #343434;
     background: #fff url('../img/select-arrow-hover.svg') no-repeat 93% 52%;
+    color: #343434;
 }
 
 .title-sort
 {
-    font-size: 14px;
-    font-weight: 500;
 
     margin-bottom: 2px;
     margin-left: 18px;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .price-range
 {
     position: relative;
-
-    width: 188px;
-    height: 20px;
     margin-top: 21x;
     margin-right: 14px;
     padding: 0 15px;
     padding-top: 16px;
 
-    cursor: pointer;
+    width: 188px;
+    height: 20px;
 
     border-radius: 15px;
     background: rgba(255, 255, 255, .2);
+
+    cursor: pointer;
 }
 
 .price-range .scale
@@ -1137,9 +1137,9 @@ h5
 
 .price-range .bar
 {
+    margin-left: 25px;
     width: 50%;
     height: 4px;
-    margin-left: 25px;
 
     background: #f8f7f4;
 }
@@ -1188,32 +1188,32 @@ h5
 
 .price-title
 {
-    font-size: 0;
-
-    width: 195px;
     margin-bottom: 2px;
     margin-left: 16px;
+
+    width: 195px;
+    font-size: 0;
 }
 
 .price-title label
 {
-    font-size: 14px;
-    font-weight: 500;
 
     display: inline-block;
 
     width: 50%;
 
     vertical-align: top;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .price-title input
 {
     width: 29px;
-
-    color: #fff;
     border: none;
     background: none;
+
+    color: #fff;
 }
 
 .fatness
@@ -1223,21 +1223,21 @@ h5
 
 .title-fatness
 {
-    font-size: 14px;
-    font-weight: 500;
 
     margin-bottom: 2px;
     margin-left: 19px;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .fatness-radio
 {
-    max-width: 386px;
-    min-height: 36px;
     margin: 0;
     margin-left: 2px;
     padding: 0;
     padding: 0 15px;
+    min-height: 36px;
+    max-width: 386px;
 
     border-radius: 14px;
     background: rgba(255, 255, 255, .2);
@@ -1262,8 +1262,8 @@ h5
 
 .fatness-radio-btn + label
 {
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
 
     cursor: pointer;
 }
@@ -1290,12 +1290,12 @@ h5
 
     width: 21px;
     height: 21px;
+    border-radius: 100%;
+    background: url('../img/radio-btn-1.svg') no-repeat;
 
     content: '';
 
     opacity: .85;
-    border-radius: 100%;
-    background: url('../img/radio-btn-1.svg') no-repeat;
 }
 
 .fatness-radio-btn + label:hover::before
@@ -1310,12 +1310,12 @@ h5
 
     width: 21px;
     height: 21px;
+    border-radius: 100%;
+    background: url('../img/radio-btn.svg') no-repeat;
 
     content: '';
 
     opacity: .85;
-    border-radius: 100%;
-    background: url('../img/radio-btn.svg') no-repeat;
 }
 
 .fatness-radio-btn:checked + label:hover::before
@@ -1336,28 +1336,28 @@ h5
 
 .fillers-title
 {
-    font-size: 14;
-    font-weight: 500;
 
     margin: 12px 0 0 17px;
+    font-weight: 500;
+    font-size: 14;
 }
 
 .fillers-checkbox li
 {
-    font-size: 16px;
-    font-weight: medium;
-    line-height: 36px;
 
     display: inline-block;
-
-    height: 36px;
     margin: 0;
     margin-right: 19px;
     padding: 0;
 
+    height: 36px;
+
     list-style: none;
 
     vertical-align: top;
+    font-weight: medium;
+    font-size: 16px;
+    line-height: 36px;
 }
 
 .fillers-checkbox li:last-child
@@ -1375,12 +1375,12 @@ h5
 
 .fillers-checkbox-btn + label
 {
-    font-size: 16px;
-    font-weight: medium;
 
     position: relative;
 
     padding: 0 0 0 32px;
+    font-weight: medium;
+    font-size: 16px;
 
     cursor: pointer;
 }
@@ -1393,12 +1393,12 @@ h5
 
     width: 20px;
     height: 20px;
+    border-radius: 3px;
+    background: url('../img/check-box.svg') no-repeat;
 
     content: '';
 
     opacity: .85;
-    border-radius: 3px;
-    background: url('../img/check-box.svg') no-repeat;
 }
 
 .fillers-checkbox-btn + label:hover::before
@@ -1413,12 +1413,12 @@ h5
 
     width: 20px;
     height: 20px;
+    border-radius: 3px;
+    background: url('../img/check-box-checked.svg') no-repeat;
 
     content: '';
 
     opacity: .85;
-    border-radius: 3px;
-    background: url('../img/check-box-checked.svg') no-repeat;
 }
 
 .fillers-checkbox-btn:checked + label:hover::before
@@ -1440,58 +1440,58 @@ h5
 
 .select-ice-submit
 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 32px;
 
     float: right;
-
-    height: 36px;
     margin-top: 39px;
     padding: 0 27px;
+
+    height: 36px;
 
     border: 2px solid #fff;
     border-radius: 20px;
     background: rgba(255, 255, 255, .2);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
 }
 
 .select-ice-submit:hover
 {
-    color: #383939;
     background: #fafbfb;
+    color: #383939;
 }
 
 .select-ice-submit:active
 {
-    color: #383939;
     border: none;
     background: #eaeaea;
     box-shadow: inset 0 1px 2px 1px #6c6d6c;
+    color: #383939;
 }
 
 .items
 {
-    font-size: 0;
 
     margin-bottom: 44px;
     padding: 0;
 
     list-style: none;
+    font-size: 0;
 }
 
 .item
 {
-    font-size: 16px;
 
     position: relative;
 
     display: inline-block;
+    margin-right: 20px;
+    min-height: 316px;
 
     width: 200px;
-    min-height: 316px;
-    margin-right: 20px;
 
     vertical-align: top;
+    font-size: 16px;
 }
 
 .item-image img
@@ -1509,16 +1509,16 @@ h5
     left: -10px;
 
     display: none;
+    padding: 10px 10px 41px 10px;
+    min-height: 315px;
 
     width: 200px;
     height: 100%;
-    min-height: 315px;
-    padding: 10px 10px 41px 10px;
-
-    content: '';
 
     border-radius: 3px;
     background: rgba(255, 255, 255, .3);
+
+    content: '';
 }
 
 .item:hover::after
@@ -1558,32 +1558,32 @@ h5
 
 .item-price
 {
-    font-size: 45px;
-    font-weight: bold;
 
     position: absolute;
     top: 149px;
     left: 1px;
 
-    letter-spacing: 0;
-
     text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+
+    letter-spacing: 0;
+    font-weight: bold;
+    font-size: 45px;
 }
 
 .item-price-symbol
 {
-    font-size: 0;
 
     display: inline-block;
-
-    width: 32px;
-    height: 37px;
     margin-top: -7px;
     margin-left: -5px;
 
-    vertical-align: top;
+    width: 32px;
+    height: 37px;
 
     background: url(../img/rub.svg) no-repeat 0 0;
+
+    vertical-align: top;
+    font-size: 0;
 }
 
 .item-size
@@ -1598,9 +1598,6 @@ h5
 
 .item-caption
 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
 
     position: relative;
 
@@ -1609,10 +1606,13 @@ h5
     margin: 5px 6px;
     margin-bottom: 40px;
 
+    color: white;
+
     text-align: center;
     text-decoration: none;
-
-    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .item-caption-underline
@@ -1623,37 +1623,37 @@ h5
 .item-caption:hover .item-caption-underline,
 .item-captiom-underline:active .item-caption-underline
 {
-    color: #ffbc9e;
     box-shadow: inset 0 -1px 0 0 #ffbc9e;
+    color: #ffbc9e;
 }
 
 .item-label
 {
-    font-size: 0;
 
     position: absolute;
     top: 0;
     left: 0;
+    font-size: 0;
 }
 
 .item-quick-review
 {
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 35px;
 
     position: absolute;
     bottom: -21px;
 
     display: none;
-
-    height: 35px;
     margin-left: 15px;
     padding: 0 17px;
 
-    text-align: center;
+    height: 35px;
 
     border-radius: 12px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 35px;
 }
 
 .item-label
@@ -1669,58 +1669,58 @@ h5
     margin-top: -46px;
     margin-bottom: 40px;
     padding-bottom: 5px;
-
-    color: #323232;
     border-radius: 12px;
     background: #ece0c7;
     background-image: url('../img/pattern_waffle.jpg');
+
+    color: #323232;
 }
 
 .features-title-h4
 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 30px;
 
     margin: 0 20px 27px 20px;
     padding-top: 21px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
 }
 
 .features-list
 {
-    font-size: 0;
 
     margin-top: 0;
     margin-left: 0;
     padding: 0;
 
     list-style: none;
+    font-size: 0;
 }
 
 .features-list li
 {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
 
     position: relative;
 
     display: inline-block;
-
-    width: 347px;
     padding-bottom: 20px;
     padding-left: 78px;
 
-    vertical-align: top;
-    vertical-align: top;
+    width: 347px;
 
     color: #323232;
+
+    vertical-align: top;
+    vertical-align: top;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .features-list li:nth-child(2n)
 {
-    width: 343px;
     padding-left: 73px;
+    width: 343px;
 }
 
 .features-list-ice::after,
@@ -1779,9 +1779,9 @@ h5
 .blog-news
 {
     float: left;
+    min-height: 220px;
 
     width: 420px;
-    min-height: 220px;
 
     border-radius: 11px;
     background: #fff url('../img/bg_strawberry_news.jpg') no-repeat center;
@@ -1789,28 +1789,28 @@ h5
 
 .g-title-h5
 {
-    font-size: 16px;
-    font-weight: 500;
 
     margin: 24px 0 3px 20px;
 
     color: #5a5a5a;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .news-mailing-link
 {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 29px;
 
     display: inline-block;
-
-    max-width: 290px;
     margin-left: 22px;
 
-    vertical-align: top;
+    max-width: 290px;
 
     color: #353535;
+
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .blog-news-link-bg
@@ -1825,8 +1825,8 @@ h5
     float: right;
 
     box-sizing: border-box;
-    width: 420px;
     padding: 5px;
+    width: 420px;
 
     border-radius: 15px;
     background: #f8f7f4 url(../img/mailing.png) repeat 0 0;
@@ -1834,8 +1834,8 @@ h5
 
 .mailing-form
 {
-    min-height: 164px;
     padding: 24px 0 20px 17px;
+    min-height: 164px;
 
     border-radius: 15px;
     background: #f8f7f4;
@@ -1843,26 +1843,26 @@ h5
 
 .mailing-text
 {
-    font-size: 16px;
-    line-height: 22px;
+    margin: 5px 6px 14px;
 
     width: 380px;
-    margin: 5px 6px 14px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .mailing-form-email
 {
-    font-size: 16px;
-    font-weight: 700;
 
     box-sizing: border-box;
-    width: 228px;
-    height: 42px;
     margin: 0 7px 0 5px;
     padding: 0 10px;
+    width: 228px;
+    height: 42px;
 
     border: 1px solid #d3d3d2;
     border-radius: 3px;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .mailing-form-email::-webkit-input-placeholder
@@ -1880,58 +1880,58 @@ h5
 .mailing-form-email:active
 {
     padding: 0 9px;
+    outline: 0;
 
     border: 2px solid #c7c6c5;
-    outline: 0;
 }
 
 .mailing-form-submit
 {
-    font-size: 17px;
-    font-weight: bold;
-    line-height: 44px;
-
-    height: 44px;
     padding: 0 22px;
 
+    height: 44px;
+
     border-radius: 18px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 44px;
 }
 
 .contacts
 {
     position: absolute;
-    z-index: 25;
     top: 69px;
     right: 20px;
-
-    width: 302px;
+    z-index: 25;
     min-height: 305px;
 
-    color: #343434;
+    width: 302px;
     border-radius: 12px;
     background: #fefefe;
+
+    color: #343434;
 }
 
 .contacts p
 {
-    font-size: 14px;
 
     margin-left: 26px;
+    font-size: 14px;
 }
 
 .contacts-address
 {
-    font-size: 14px;
-    line-height: 20px;
 
     margin-top: 26px;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .contacts-address-street,
 .contacts-phone-number
 {
-    font-size: 18px;
     font-weight: 700;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -1943,46 +1943,46 @@ h5
 
 .contacts-button
 {
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 44px;
-
-    width: 186px;
-    height: 44px;
     margin-left: 26px;
     padding: 0 32px;
 
+    width: 186px;
+    height: 44px;
+
     border-radius: 18px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 44px;
 }
 
 .pagination
 {
-    font-size: 0;
 
     float: right;
 
     margin-top: -2px;
     margin-right: -6px;
     margin-bottom: 29px;
+    font-size: 0;
 }
 
 .pagination a
 {
-    font-size: 16px;
-    line-height: 16px;
 
     display: inline-block;
-
-    width: 16px;
-    height: 16px;
     margin-left: 5px;
     padding: 4px;
 
-    text-align: center;
-    vertical-align: top;
-    text-decoration: none;
+    width: 16px;
+    height: 16px;
 
     color: #fff;
+    vertical-align: top;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .pagination .page-next
@@ -2004,18 +2004,18 @@ h5
 
 .pagination a:active
 {
-    color: #353535;
     border-radius: 100%;
     background: #fff;
+    color: #353535;
 }
 
 .pagination	 a.pagination-current
 {
     padding: 4px;
 
-    color: #353535;
     border-radius: 100%;
     background: #fff;
+    color: #353535;
 }
 
 .pagination .page-next:hover,
@@ -2031,19 +2031,19 @@ h5
 
 .pagination .page-previous
 {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
 
     background: url('../img/page-next.png') no-repeat 50%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .pagination .page-previous:hover,
 .pagination .page-previous:active
 {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
 
     background: url('../img/page-next.png') no-repeat 50%;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 
 .inactive
@@ -2079,28 +2079,28 @@ h5
 
 .footer-social
 {
-    font-size: 0;
 
     float: left;
+    padding: 20px 0;
 
     width: 200px;
-    padding: 20px 0;
+    font-size: 0;
 }
 
 .social-btn
 {
     display: inline-block;
+    margin-right: 13px;
 
     width: 31px;
     height: 31px;
-    margin-right: 13px;
+    border: 3px solid rgba(255, 255, 255, .5);
+    border-radius: 100%;
 
     vertical-align: top;
     text-decoration: none;
 
     opacity: .7;
-    border: 3px solid rgba(255, 255, 255, .5);
-    border-radius: 100%;
 }
 
 .social-btn-twitter
@@ -2135,24 +2135,24 @@ h5
 
 .footer-info
 {
-    font-size: 0;
 
     float: left;
-
-    width: 420px;
     margin-left: 40px;
     padding: 14px 0;
+
+    width: 420px;
+    font-size: 0;
 }
 
 .footer-info-link
 {
-    font-size: 13px;
 
     display: inline-block;
 
     min-width: 143px;
 
     vertical-align: top;
+    font-size: 13px;
 }
 
 .footer-info-heart
@@ -2165,22 +2165,22 @@ h5
     position: absolute;
     top: 5px;
     left: -22px;
-
+	
     width: 15px;
     height: 13px;
 
-    content: '';
-
     background: url('../img/heart.svg') no-repeat 50%;
+
+    content: '';
 }
 
 .footer-info-link a,
 .footer-copyright-link
 {
-    text-decoration: none;
+    box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, .5);
 
     color: #fff;
-    box-shadow: inset 0 -1px 0 0 rgba(255, 255, 255, .5);
+    text-decoration: none;
 }
 
 .footer-info-link a:hover,
@@ -2188,21 +2188,20 @@ h5
 .footer-copyright a:hover,
 .footer-copyright a:active
 {
-    color: #ffbc9e;
     box-shadow: inset 0 -1px 0 0 #ffbc9e;
+    color: #ffbc9e;
 }
 
 .footer-copyright
 {
     float: right;
+    padding: 19px 0;
 
     width: 188px;
-    padding: 19px 0;
 }
 
 .footer-copyright p
 {
-    font-size: 12px;
 
     float: right;
 
@@ -2210,20 +2209,21 @@ h5
     margin-top: -3px;
     margin-right: -2px;
     padding: 0;
+    font-size: 12px;
 }
 
 .feedback-form
 {
     position: fixed;
-    z-index: 30;
     top: 20%;
     left: 50%;
-	margin-left: -239px;
+    z-index: 30;
 
     display: none;
+	margin-left: -239px;
+    min-height: 443px;
 
     width: 478px;
-    min-height: 443px;
 
     border-radius: 7px;
     background: #f8f7f4;
@@ -2231,30 +2231,30 @@ h5
 
 .title-feedback-form
 {
-    font-size: 24px;
-    font-weight: 500;
 
     margin: 20px 0 22px 25px;
 
     color: #343434;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 .feedback-form-input
 {
-    font-size: 16px;
-    font-weight: 400;
-    font-weight: 700;
-    line-height: 42px;
 
     box-sizing: border-box;
-    width: 266px;
-    height: 42px;
     margin: 0 0 20px 24px;
     padding: 0 15px;
-
-    color: #333;
+    width: 266px;
+    height: 42px;
     border: 1px solid #d3d3d2;
     border-radius: 3px;
+
+    color: #333;
+    font-weight: 400;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 42px;
 }
 
 .feedback-form-input::-webkit-input-placeholder
@@ -2272,9 +2272,9 @@ h5
 .feedback-form-input:focus
 {
     padding: 0 14px;
+    outline: 0;
 
     border: 2px solid #2e88e4;
-    outline: 0;
 }
 
 .feedback-form-email
@@ -2292,25 +2292,25 @@ h5
 .feedback-form-email:focus
 {
     padding: 0 19px;
+    outline: 0;
 
     border: 2px solid #2e88e4;
-    outline: 0;
 }
 
 .feedback-form-textarea
 {
-    font-weight: 700;
-
-    width: 386px;
-    min-height: 133px;
     margin: 0 0 90px 24px;
     padding: 9px 20px;
+    min-height: 133px;
 
-    resize: none;
-
-    color: #333;
+    width: 386px;
     border: 1px solid #d3d3d2;
     border-radius: 3px;
+
+    color: #333;
+    font-weight: 700;
+
+    resize: none;
 }
 
 .feedback-form-textarea::-webkit-input-placeholder
@@ -2328,25 +2328,25 @@ h5
 .feedback-form-textarea:focus
 {
     padding: 8px 19px;
+    outline: 0;
 
     border: 2px solid #2e88e4;
-    outline: 0;
 }
 
 
 .feedback-form-submit
 {
-    font-size: 17px;
-    font-weight: bold;
 
     position: absolute;
     right: 25px;
     bottom: 27px;
-
-    height: 44px;
     padding: 0 26px;
 
+    height: 44px;
+
     border-radius: 18px;
+    font-weight: bold;
+    font-size: 17px;
 }
 
 .feedback-form-button-close
