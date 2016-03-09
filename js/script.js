@@ -1,5 +1,6 @@
 var link = document.querySelector(".contacts-button");
 var popup = document.querySelector(".feedback-form");
+var overlay = document.querySelector(".overlay");
 var close = popup.querySelector(".feedback-form-button-close");
 var login = popup.querySelector(".feedback-form-input");
 var email = popup.querySelector(".feedback-form-email");
@@ -11,6 +12,7 @@ var storageEmail = localStorage.getItem("email");
 	link.addEventListener("click", function(event) {
 		event.preventDefault();
 		popup.classList.add("feedback-form-show");
+		overlay.classList.add("overlay-show");
 		
 		if (storageLogin) {
 			login.value = storageLogin;
@@ -28,6 +30,7 @@ var storageEmail = localStorage.getItem("email");
 	close.addEventListener("click", function(event) {
 		event.preventDefault();
 		popup.classList.remove("feedback-form-show");
+		overlay.classList.remove("overlay-show");
 	});
 	
 	popup.addEventListener("submit", function(event) {
@@ -43,13 +46,15 @@ var storageEmail = localStorage.getItem("email");
 	submit.addEventListener("click", function(event) {
 		if (login.value && email.value && textarea.value) {
 			popup.classList.remove("feedback-form-show");
+			overlay.classList.remove("overlay-show");
 		};
 	});
 	
 	window.addEventListener("keydown", function(event) {
 		if (event.keyCode === 27) {
 			if (popup.classList.contains("feedback-form-show")) {
-				popup.classList.remove("feedback-form-show"); 
+				popup.classList.remove("feedback-form-show");
+				overlay.classList.remove("overlay-show");				
 			}
 		}
 	});
